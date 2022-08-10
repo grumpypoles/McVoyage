@@ -117,10 +117,22 @@ body {
 .ni_container {
   display: grid;
   grid-template-columns: [gw_-start] minmax(6rem, 1fr) [gw_center-start] repeat(3, [col-start] minmax(min-content, 34rem) [col-end]) [gw_center-end] minmax(6rem, 1fr) [gw_full-end]; }
+  @media only screen and (max-width: 75em) {
+    .ni_container {
+      grid-template-columns: [gw_-start] minmax(6rem, 1fr) [gw_center-start] repeat(2, [col-start] minmax(min-content, 34rem) [col-end]) [gw_center-end] minmax(6rem, 1fr) [gw_full-end]; } }
+  @media only screen and (max-width: 37.5em) {
+    .ni_container {
+      grid-template-columns: 1rem minmax(min-content, 34rem) 1rem; } }
 
 .si_container {
   display: grid;
   grid-template-columns: [gw_-start] minmax(6rem, 1fr) [gw_center-start] repeat(3, [col-start] minmax(min-content, 34rem) [col-end]) [gw_center-end] minmax(6rem, 1fr) [gw_full-end]; }
+  @media only screen and (max-width: 75em) {
+    .si_container {
+      grid-template-columns: [gw_-start] minmax(6rem, 1fr) [gw_center-start] repeat(2, [col-start] minmax(min-content, 34rem) [col-end]) [gw_center-end] minmax(6rem, 1fr) [gw_full-end]; } }
+  @media only screen and (max-width: 37.5em) {
+    .si_container {
+      grid-template-columns: 1rem minmax(min-content, 34rem) 1rem; } }
 
 @keyframes moveInLeft {
   0% {

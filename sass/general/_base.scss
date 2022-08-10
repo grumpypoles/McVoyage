@@ -114,6 +114,23 @@ body {
     )
     [gw_center-end] minmax(6rem, 1fr)
     [gw_full-end];
+
+  @media only screen and (max-width: $bp_large) {
+    grid-template-columns:
+      [gw_-start] minmax(6rem, 1fr)
+      [gw_center-start] repeat(
+        2,
+        [col-start] minmax(min-content, 34rem) [col-end]
+      )
+      [gw_center-end] minmax(6rem, 1fr)
+      [gw_full-end];
+  }
+  @media only screen and (max-width: $bp_small) {
+    grid-template-columns:
+      1rem
+      minmax(min-content, 34rem)
+      1rem;
+  }
 }
 
 .si_container {
@@ -127,4 +144,21 @@ body {
     )
     [gw_center-end] minmax(6rem, 1fr)
     [gw_full-end];
+
+  @media only screen and (max-width: $bp_large) {
+    grid-template-columns:
+      [gw_-start] minmax(6rem, 1fr)
+      [gw_center-start] repeat(
+        2,
+        [col-start] minmax(min-content, 34rem) [col-end]
+      )
+      [gw_center-end] minmax(6rem, 1fr)
+      [gw_full-end];
+  }
+  @media only screen and (max-width: $bp_small) {
+    grid-template-columns:
+      1rem
+      minmax(min-content, 34rem)
+      1rem;
+  }
 }
