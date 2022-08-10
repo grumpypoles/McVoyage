@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/icons/favicon.png">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+
+  <title>McWoyage</title>
+</head>
+
+<body>
+  <container class="main_container">
+    <div class="m_topbar">
+      <a href="#">
+        <img src="../img/icons/earth-grid.png" alt="McWoyage Logo" class="logo" />
+      </a>
+      <nav class="main_nav">
+        <ul class="main_nav_list" id="nav-list">
+
+          <li><a class="main_nav_link" href="/pages/great_walks.html">Great Walks</a></li>
+          <li><a class="main_nav_link" href="/pages/north_island.html">North Island</a></li>
+          <li><a class="main_nav_link" href="/pages/south_island.html">South Island</a></li>
+          <li><a class="main_nav_link" href="">Overseas Trips</a></li>
+
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav" id="toggle-Button">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </div>
+
+    <header class="header">
+
+      <div class="slider">
+        <div class="slide active">
+          <img src="/img/main_image/Awaroa.png" alt="Awaroa Beach South Island New Zealand" class="slide_img">
+          <div class="info">
+            <img src="img/logos/McWoyage_white_no_background.png" alt="Logo" class="slide_logo">
+          </div>
+        </div>
+        <div class="slide">
+          <img src="/img/main_image/NI-Taranaki.png" alt="Taranaki Beach North Island New Zealand" class="slide_img">
+          <div class="info">
+            <img src="img/logos/McWoyage_white_no_background.png" alt="Logo" class="slide_logo">
+          </div>
+        </div>
+        <div class="slide">
+          <img src="/img/main_image/SI-Fiordland.png" alt="Fiordland South Island New Zealand" class="slide_img">
+          <div class="info">
+            <img src="img/logos/McWoyage_white_no_background.png" alt="Logo" class="slide_logo">
+          </div>
+        </div>
+        <div class="slide">
+          <img src="/img/main_image/Athens.png" alt="Athens Greece" class="slide_img">
+          <div class="info">
+            <img src="img/logos/McWoyage_white_no_background.png" alt="Logo" class="slide_logo">
+          </div>
+        </div>
+        <div class="navigation">
+          <ion-icon name="chevron-back-outline" class="prev-btn"></ion-icon>
+          <ion-icon name="chevron-forward-outline" class="next-btn"></ion-icon>
+        </div>
+        <div class="navigation-visibility">
+          <div class="slide-icon active"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+        </div>
+      </div>
+    </header>
+    <section class="trips">
+      <h1 class="heading-1 trips_heading">Check out our trips</h1>
+      <div class="trip">
+        <img src="/img/galeries/main/waikaremoana.jpg" alt="Lake Waikaremoana Forest" class="trip_img">
+
+        <h5 class="trip_name">NZ Great Walks</h5>
+        <div class="trip_description">
+          <p>New Zealand &apos;s Great Walks are premier tracks that pass through diverse and
+            spectacular scenery. Currently tere are 10 tracks classifed as <strong>Great Walks</strong>. In the near
+            future
+            (if not already) the Humpridge Track will join the elite list.</p>
+        </div>
+        <a href="/pages/great_walks.html" class="btn trip_link">See the details</a>
+      </div>
+      <div class="trip">
+        <img src="/img/galeries/main/taranaki.jpg" alt="Taranaki Costal Walk Whale Ribs" class="trip_img">
+        <h5 class="trip_name">North Island Trips</h5>
+        <div class="trip_description">
+          <p>It doesn&apos;t matter if they are short walks, day walks or multi-day walks, we love them all. There are
+            plenty of opportunities for exploring New Zealand&apos;s remarkable North Island and discovering the
+            beautiful landscape and nature across the
+            island.
+          </p>
+        </div>
+
+        <a href="/pages/north_island.html" class="btn trip_link">See the details</a>
+      </div>
+      <div class="trip">
+        <img src="/img/galeries/main/fiordland.jpg" alt="Fiordland Helicopter Landing" class="trip_img">
+        <h5 class="trip_name">South Island Trips</h5>
+        <div class="trip_description">
+          <p>Where possible, tramping is the best way to truly absorb the splendour of New Zealand&apos;s South Island.
+            All the overheard stories about the beauty of the island are true. In recent years Te Anau become our summer
+            base and the gate to Fiordland, Southland and Queenstown.
+          </p>
+        </div>
+
+        <a href="/pages/south_island.html" class="btn trip_link">See the details</a>
+      </div>
+      <div class="trip">
+        <img src="/img/galeries/main/Amalfi.jpg" alt="Amalfi Coast View of Amalfi" class="trip_img">
+        <h5 class="trip_name">Overseas Trips</h5>
+        <div class="trip_description">
+          <p>Living in the paradise we forget sometimes that there&apos;s a <strong>world out there</strong> .
+            Currently our main focus is on Europe. Scotland, Ireland, Poland, Germany, Czech Republic, Spain, Italy,
+            Greece.
+            We are hoping to expand this list and add many more fascinating places. Pacific Islands, Asia, Australia,
+            Americas…..
+
+          </p>
+        </div>
+        <a href="" class="btn trip_link">See the details</a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer-placeholder">
+
+    </div>
+    <script>
+      const toggleButton = document.getElementById('toggle-Button');
+      const navList = document.getElementById('nav-list');
+      toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active')
+      })
+      const btnNavEl = document.querySelector('.btn-mobile-nav');
+      const headerEl = document.querySelector('.m_topbar');
+
+      btnNavEl.addEventListener('click', () => {
+        headerEl.classList.toggle('nav-open');
+      });
+
+      ///////////////////////////////////////////////////////////
+      // Sticky navigation menu
+
+      // const sectionHeroEl = document.querySelector('.header');
+      // const obs = new IntersectionObserver(
+      //   (entries) => {
+      //     const ent = entries[0];
+      //     console.log(ent);
+      //     if (!ent.isIntersecting) {
+      //       document.body.classList.add('sticky');
+      //     }
+      //     if (ent.isIntersecting) {
+      //       document.body.classList.remove('sticky');
+      //     }
+      //   },
+      //   {
+      //     //In the viewport
+      //     root: null,
+      //     threshold: 0,
+      //     rootMargin: '-70px',
+      //   }
+      // );
+      // obs.observe(sectionHeroEl);
+
+
+    </script>
+    <script>
+      $.get("pages/footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+      });
+    </script>
+
+
+    <!-- end of the Footer -->
+
+
+  </container>
+</body>
+
+</html>
