@@ -247,7 +247,7 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-#ffa502 .btn {
+.btn {
   background-color: #55c57a;
   color: #f7f7f7;
   border: none;
@@ -257,7 +257,7 @@ body {
   padding: 1.8rem 3rem;
   cursor: pointer;
   transition: all 0.2s; }
-  #ffa502 .btn:hover {
+  .btn:hover {
     background-color: #28b485; }
 
 .mb-sm {
