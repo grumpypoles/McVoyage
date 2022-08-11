@@ -7,19 +7,14 @@
   //adding gradient to the background img
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-secondary-light, 0.8),
-      rgba($color-secondary-dark, 0.8)
+      rgba($color-fourth-light, 0.8),
+      rgba($color-fourth-dark, 0.8)
     ),
     url(../../img/galeries/south_island/south_island.jpg);
   background-size: cover; //fits image inside the viewport
   background-position: top; //stays at the top of the container
   position: relative; //requires for the children set to absolute
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 75vh,
-    0 100%
-  ); //covers other browsers
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //covers other browsers
 
   @supports (clip-path: polygon(0 0)) or (--webkit-clip-path: polygon(0 0)) {
     --webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //create shapes
@@ -32,8 +27,8 @@
   //   only screen and (min-width: 112.5em) {
   //   background-image: linear-gradient(
   //       to right bottom,
-  //       rgba($color-secondary-light, 0.8),
-  //       rgba($color-secondary-dark, 0.8)
+  //       rgba($color-fourth-light, 0.8),
+  //       rgba($color-fourth-dark, 0.8)
   //     ),
   //     url(../../img/galeries/south_island/Tongoriro.jpg);
   // }
@@ -101,10 +96,7 @@
     position: fixed; //takes the element out of container, allows to specify position
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient(
-      $color-secondary-light,
-      $color-secondary-dark
-    );
+    background-image: radial-gradient($color-fourth-light, $color-fourth-dark);
     z-index: 100;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 
@@ -168,7 +160,7 @@
     &:hover,
     &:active {
       background-position: 100%;
-      color: $color-secondary-light;
+      color: $color-fourth-light;
       transform: translateX(1rem);
     }
   }
@@ -354,22 +346,22 @@
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         );
       }
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         );
       }
       &-3 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         );
       }
     }
@@ -400,56 +392,56 @@
     &--1 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         ),
         url(../../img/galeries/south_island/Queen_Charlotte.jpg);
     }
     &--2 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         ),
         url(../../img/galeries/south_island/Fiordland.jpg);
     }
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         ),
         url(../../img/galeries/south_island/Nydia_Track.jpg);
     }
     &--4 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         ),
         url(../../img/galeries/south_island/The_Link.jpg);
     }
     &--5 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         ),
-        url(../../img/galeries/south_island/Short_Walks.jpg);
+        url(../../img/galeries/south_island/Kaikoura_Walk.jpg);
     }
     &--6 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         ),
         url(../../img/galeries/south_island/Hump_Ridge.jpg);
     }
     &--7 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-fourth-light,
+          $color-fourth-dark
         ),
         url(../../img/galeries/south_island/Short_Walks.jpg);
     }
@@ -472,8 +464,8 @@
     &--1 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
+        rgba($color-fourth-light, 0.85),
+        rgba($color-fourth-dark, 0.85)
       );
     }
     &--2 {
@@ -486,8 +478,8 @@
     &--3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
+        rgba($color-fourth-light, 0.85),
+        rgba($color-fourth-dark, 0.85)
       );
     }
   }
@@ -513,7 +505,7 @@
         width: 2rem;
         height: 2rem;
         margin-right: 1.5rem;
-        color: $color-secondary-light;
+        color: $color-fourth-dark;
       }
     }
 

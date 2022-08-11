@@ -14,12 +14,7 @@
   background-size: cover; //fits image inside the viewport
   background-position: top; //stays at the top of the container
   position: relative; //requires for the children set to absolute
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 75vh,
-    0 100%
-  ); //covers other browsers
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //covers other browsers
 
   @supports (clip-path: polygon(0 0)) or (--webkit-clip-path: polygon(0 0)) {
     --webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //create shapes
