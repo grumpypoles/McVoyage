@@ -21,17 +21,6 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //create shapes
     height: 95vh;
   }
-  // Combination of high resolution screen and screen size
-  // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  //   only screen and (--webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  //   only screen and (min-width: 112.5em) {
-  //   background-image: linear-gradient(
-  //       to right bottom,
-  //       rgba($color-fourth-light, 0.8),
-  //       rgba($color-fourth-dark, 0.8)
-  //     ),
-  //     url(../../img/galeries/south_island/Tongoriro.jpg);
-  // }
 
   @include respond(phone) {
     --webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -540,25 +529,6 @@
     font-weight: 100;
   }
 
-  //Media query for big touch screen tablets
-  // @include respond(tab-port) {
-  // @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-  //   height: auto;
-  //   border-radius: 3px;
-  //   background-color: $color-white;
-  //   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-  //   &_side {
-  //     height: auto;
-  //     position: relative;
-  //     box-shadow: none;
-
-  //     &--back {
-  //       transform: rotateY(0);
-  //       clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-  //     }
-  //   }
-  // }
-
   &:hover &_side--front {
     transform: rotateY(0);
   }
@@ -583,10 +553,13 @@
 
   &_info-slogan {
     font-size: 4rem;
+    @media only screen and (max-width: $bp_large) {
+      font-size: 3rem;
+    }
   }
 
   &_info-more {
-    height: 15rem;
+    height: 18rem;
     margin-top: 5rem;
     font-size: 1.4rem;
     color: $color-white;
@@ -696,8 +669,6 @@
   position: relative;
 
   display: grid;
-  // grid-template-columns: repeat(8, 1fr);
-  // grid-template-rows: repeat(7, 5vw);
   grid-template: repeat(7, 5vw) / repeat(8, 1fr);
 
   grid-gap: 1.5rem;

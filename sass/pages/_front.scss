@@ -47,29 +47,13 @@
 
 .slider .slide .info {
   position: absolute;
-  // color: #222;
-  // background: rgba(255, 255, 255, 0.3);
-  // width: 75%;
   margin-top: 5rem;
   margin-left: 5rem;
-  // padding: 20px;
-  // border-radius: 5px;
-  // box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05);
 }
 .slide_logo {
   width: 5rem;
   height: 5rem;
 }
-// .slider .slide .info h2 {
-//   font-size: 2em;
-//   font-weight: 800;
-// }
-
-// .slider .slide .info p {
-//   font-size: 2rem;
-//   font-weight: 400;
-//   columns: $color-grey-light-1;
-// }
 
 .navigation {
   height: 500px;
@@ -93,7 +77,6 @@
   font-size: 4rem;
   font-weight: 900;
   color: $color-grey-light-2;
-  // background: $color-primary;
   padding: 1rem;
   cursor: pointer;
 }
