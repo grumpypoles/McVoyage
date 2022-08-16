@@ -19,37 +19,18 @@
 
 
 <body>
+  <!-- Navigation -->
+  <div id="navigation-placeholder">
 
-  <div class="gw_navigation">
-    <input type="checkbox" class="gw_navigation_checkbox" id="navi-toggle">
-
-    <label for="navi-toggle" class="gw_navigation_button">
-      <span class="gw_navigation_icon">
-        &nbsp;
-      </span>
-    </label>
-    <div class="gw_navigation_background">&nbsp;</div>
-    <nav class="gw_navigation_nav">
-      <ul class="gw_navigation_list">
-        <li class="gw_navigation_item"><a href="/pages/gw-waikaremoana.html"
-            class="gw_navigation_link"><span>01</span>Lake
-            Waikaremoana</a></li>
-        <li class="gw_navigation_item"><a href="#" class="gw_navigation_link"><span>02</span>Abel Tasman</a></li>
-        <li class="gw_navigation_item"><a href="#" class="gw_navigation_link"><span>03</span>Tongariro Northen
-            Circuit</a></li>
-        <li class="gw_navigation_item"><a href="#" class="gw_navigation_link"><span>04</span>Wanganui Journey</a></li>
-        <li class="gw_navigation_item"><a href="#" class="gw_navigation_link"><span>05 </span>Routeburn Track</a></li>
-        <li class="gw_navigation_item"><a href="#" class="gw_navigation_link"><span>06 </span>Milford Track</a></li>
-        <li class="gw_navigation_item"><a href="north_island.html" class="gw_navigation_link"><span>07 </span>North
-            Island</a></li>
-        <li class="gw_navigation_item"><a href="south_island.html" class="gw_navigation_link"><span>08 </span>South
-            Island</a></li>
-        <li class="gw_navigation_item"><a href="world.html" class="gw_navigation_link"><span>09 </span>Overseas</a>
-        </li>
-        <li class="gw_navigation_item"><a href="../index.html" class="gw_navigation_link"><span>10 </span>Home</a></li>
-      </ul>
-    </nav>
   </div>
+  <script>
+    $.get("../pages/gw_navigation.html", function (data) {
+      $("#navigation-placeholder").replaceWith(data);
+    });
+  </script>
+
+
+  <!-- end of the Navigation -->
 
 
   <header class="gw_header">
@@ -113,7 +94,7 @@
             <div class="card_cta">
               <div class="card_info-box">
                 <p class="card_info-name">Great Walks</p>
-                <p class="card_info-slogan">Tu Hoi Land</p>
+                <p class="card_info-slogan">Tuhoe Land</p>
                 <p class="card_info-more">Located on the East Coast of the North Island in the Te Urewera area , this
                   Great Walk follows the
                   shoreline of Lake Waikaremoana, the &apos;sea of rippling waters&apos;. </p>
