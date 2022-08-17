@@ -2264,7 +2264,7 @@ body {
 
 .walk_text-box {
   position: relative;
-  padding: 9.6rem 0; }
+  padding: 5rem 0; }
 
 .walk_day-number {
   font-size: 8.68rem;
@@ -2292,23 +2292,38 @@ body {
 .walk_day-description {
   font-size: 1.6rem;
   line-height: 1.8;
-  text-align: justify;
-  display: -webkit-box;
-  -webkit-line-clamp: 12;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  text-align: justify; }
 
 .walk_day-img-box {
   position: relative;
   display: flex;
-  align-items: flex-end;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  row-gap: 5rem;
+  align-items: center;
   margin-top: 2rem; }
 
 .walk_day-img {
   width: 100%;
-  height: 100%; }
+  max-height: 100%; }
+
+.walk-icons {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  gap: 5rem; }
+  .walk-icons ion-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #2998ff; }
+
+.walk-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; }
 
 /************************/
 /* GENERAL COMPONENTS */
@@ -2318,6 +2333,7 @@ body {
 
 .gw_lw-container {
   max-width: 120rem;
+  max-height: fit-content;
   padding: 0 3.2rem;
   margin: 5rem auto;
   background-color: #f7f7f7; }
@@ -2383,25 +2399,6 @@ body {
 
 .col-1-of-2 {
   width: calc((100% - 6rem / 2)); }
-
-.walk-icons {
-  position: absolute;
-  bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  gap: 5rem; }
-  .walk-icons ion-icon {
-    width: 2rem;
-    height: 2rem;
-    color: #2998ff; }
-
-.walk-icon {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; }
 
 .map {
   display: flex;

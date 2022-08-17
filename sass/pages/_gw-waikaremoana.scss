@@ -3,13 +3,14 @@
   height: 50rem;
   margin-bottom: 5rem;
 }
+
 .walks {
   margin-bottom: 5rem;
 }
 .walk {
   &_text-box {
     position: relative;
-    padding: 9.6rem 0;
+    padding: 5rem 0;
   }
   &_day-number {
     font-size: 8.68rem;
@@ -39,22 +40,50 @@
     line-height: 1.8;
     text-align: justify;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 12;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    //Limit the text overflow
+
+    // display: -webkit-box;
+    // -webkit-line-clamp: 12;
+    // -webkit-box-orient: vertical;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
   }
   &_day-img-box {
     position: relative;
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    row-gap: 5rem;
+
+    align-items: center;
+    // margin-bottom: rem;
     margin-top: 2rem;
   }
   &_day-img {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
+  }
+
+  &-icons {
+    position: absolute;
+    bottom: 2rem;
+    // margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    gap: 5rem;
+    ion-icon {
+      width: 2rem;
+      height: 2rem;
+      // margin-right: 1.5rem;
+      color: $color-tertiary-light;
+    }
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 
@@ -66,6 +95,7 @@
 }
 .gw_lw-container {
   max-width: 120rem;
+  max-height: fit-content;
   padding: 0 3.2rem;
   margin: 5rem auto;
   background-color: $color-grey-light-1;
@@ -145,30 +175,6 @@
 }
 .col-1-of-2 {
   width: calc((100% - #{$gutter-horizontal} / 2));
-}
-.walk {
-  &-icons {
-    position: absolute;
-    bottom: 2rem;
-    // margin-top: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    gap: 5rem;
-    ion-icon {
-      width: 2rem;
-      height: 2rem;
-      // margin-right: 1.5rem;
-      color: $color-tertiary-light;
-    }
-  }
-  &-icon {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
 }
 
 .map {
