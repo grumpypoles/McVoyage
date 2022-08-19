@@ -1,3 +1,33 @@
+.gws_topbar {
+  margin: 0;
+  max-height: 60rem;
+  margin-bottom: 5rem;
+  position: relative;
+  background: $color-grey-light-2;
+  &-gallery {
+    width: 100vw;
+    height: 55vh;
+    img {
+      width: 0;
+      height: 0;
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+  &-text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &-text-lbottom {
+    position: absolute;
+    left: 5rem;
+    bottom: 5rem;
+  }
+}
+
 .main_img {
   width: 100%;
   height: 50rem;
@@ -80,7 +110,7 @@
       color: $color-tertiary-light;
     }
     @include respond(tab-port) {
-      bottom: -2rem;
+      bottom: -3rem;
     }
   }
   &-icon {
@@ -207,6 +237,9 @@
     width: 2rem;
     height: 2rem;
     color: $color-tertiary-light;
+    @include respond(tab-port) {
+      z-index: 10;
+    }
   }
   &-links {
     list-style: none;
