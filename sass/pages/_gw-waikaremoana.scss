@@ -7,6 +7,9 @@
   &-gallery {
     width: 100vw;
     height: 55vh;
+    @include respond(tab-port) {
+      height: 25vh;
+    }
     img {
       width: 0;
       height: 0;
@@ -233,13 +236,15 @@
     gap: 1rem;
     margin: 0;
   }
+  &-icons {
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
   &-icon {
     width: 2rem;
     height: 2rem;
     color: $color-tertiary-light;
-    @include respond(tab-port) {
-      z-index: 10;
-    }
   }
   &-links {
     list-style: none;
@@ -252,5 +257,12 @@
   &-img {
     width: 100%;
     height: 100%;
+  }
+  iframe {
+    width: 96rem;
+    height: 48rem;
+    @include respond(phone) {
+      width: 70rem;
+    }
   }
 }
