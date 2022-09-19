@@ -1618,6 +1618,27 @@ body {
           width: 60%;
           height: 60%; } }
 
+/***********************/
+/* COMPOSITION SECTION */
+/***********************/
+.composition_ni {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem; }
+
+.composition_ni-item img {
+  display: block;
+  width: 125%;
+  object-fit: cover;
+  transition: all 0.4s; }
+
+.composition_ni-item {
+  overflow: hidden; }
+
+.composition_ni-item img:hover {
+  transform: scale(1.25); }
+
 /*********************/
 /* HEADER SECTION    */
 /*********************/

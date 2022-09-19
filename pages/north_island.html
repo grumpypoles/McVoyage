@@ -20,43 +20,21 @@
 
 <body>
 
-  <div class="walk_navigation">
-    <input type="checkbox" class="walk_navigation_checkbox" id="navi-toggle">
+  <!-- Navigation -->
+  <div id="navigation-placeholder">
 
-    <label for="navi-toggle" class="walk_navigation_button">
-      <span class="walk_navigation_icon">
-        &nbsp;
-      </span>
-    </label>
-    <div class="walk_navigation_background walk_navigation_background-ni">&nbsp;</div>
-    <nav class="walk_navigation_nav">
-      <ul class="walk_navigation_list">
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>01</span>Kawakawa Station</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>02</span>Taranaki</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>03</span>Ohakune</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>04</span>Waiheke Island</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>05
-            </span>Shorter Walks</a></li>
-        <li class="walk_navigation_item"><a href="great_walks.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>06 </span>Great
-            Walks</a></li>
-        <li class="walk_navigation_item"><a href="south_island.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>07 </span>South
-            Island</a></li>
-        <li class="walk_navigation_item"><a href="world.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>08 </span>Overseas</a>
-        </li>
-        <li class="walk_navigation_item"><a href="../index.html"
-            class="walk_navigation_link walk_navigation_link-ni"><span>09 </span>Home</a></li>
-
-      </ul>
-    </nav>
   </div>
+  <script>
+    $.get("../pages/ni_navigation.html", function (data) {
+      $("#navigation-placeholder").replaceWith(data);
+    });
+  </script>
+
+
+  <!-- end of the Navigation -->
+
+
+
 
 
   <header class="ni_header">
@@ -125,7 +103,7 @@
                   Stations. Located along the South Wairarapa coastline with sweeping views across to the South Island.
                 </p>
               </div>
-              <a href="/pages/gw-waikaremoana.html" class="card_btn card_btn--white">Details</a>
+              <a href="/pages/ni_kawakawa.html" class="card_btn card_btn--white">Details</a>
             </div>
           </div>
         </div>
@@ -175,7 +153,7 @@
                 <p class="ni_card_info-slogan">Famous Naki</p>
                 <p class="card_info-more">With vast land coverage comes plenty of unique things to see and do.</p>
               </div>
-              <a href="#popup" class="card_btn card_btn--white">Details</a>
+              <a href="/pages/wip.html" class="card_btn card_btn--white">Details</a>
             </div>
           </div>
         </div>
@@ -226,7 +204,7 @@
                 <p class="card_info-more">Ohakune not only has some of the best things to do in the local area but some
                   of the must-dos for the entire North Island</p>
               </div>
-              <a href="#popup" class="card_btn card_btn--white">Details</a>
+              <a href="/pages/wip.html" class="card_btn card_btn--white">Details</a>
             </div>
           </div>
         </div>
@@ -277,7 +255,7 @@
                 <p class="card_info-more">Haven of beautiful vineyards, olive groves, fantastic cuisine and many
                   beaches.</p>
               </div>
-              <a href="#popup" class="card_btn card_btn--white">Details</a>
+              <a href="/pages/wip.html" class="card_btn card_btn--white">Details</a>
             </div>
           </div>
         </div>
@@ -328,7 +306,7 @@
                 <p class="card_info-more">It is easy to discover our own backyard. Small backpack, good walking shoes,
                   walking poles and the world is your oyster</p>
               </div>
-              <a href="#popup" class="card_btn card_btn--white">Details</a>
+              <a href="/pages/wip.html" class="card_btn card_btn--white">Details</a>
             </div>
           </div>
         </div>
