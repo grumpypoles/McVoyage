@@ -1639,6 +1639,24 @@ body {
 .composition_ni-item img:hover {
   transform: scale(1.25); }
 
+.composition_ni-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem; }
+
+.composition_ni-item-4 img {
+  display: block;
+  width: 150%;
+  object-fit: cover;
+  transition: all 0.4s; }
+
+.composition_ni-item-4 {
+  overflow: hidden; }
+
+.composition_ni-item-4 img:hover {
+  transform: scale(1.25); }
+
 /*********************/
 /* HEADER SECTION    */
 /*********************/
@@ -2316,6 +2334,7 @@ body {
   padding: 5rem 0; }
 
 .walk_day-number {
+  grid-column: 1 / 2;
   font-size: 8.68rem;
   font-weight: 700;
   color: #999;
@@ -2328,6 +2347,8 @@ body {
   font-weight: 700;
   letter-spacing: -0.5px;
   color: #333; }
+  .walk_day-heading-short {
+    margin-bottom: 7rem; }
 
 .walk_subheading {
   display: block;
@@ -2410,6 +2431,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .grid--2--cols {
       grid-template-columns: repeat(1, 1fr); } }
+
+.grid--short {
+  row-gap: 0; }
 
 .composition {
   margin-top: 5rem;
@@ -2497,3 +2521,5 @@ body {
     @media only screen and (max-width: 37.5em) {
       .map iframe {
         width: 70rem; } }
+  .map-short {
+    grid-column: 1 / 3; }

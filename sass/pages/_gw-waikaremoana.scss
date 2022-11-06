@@ -46,11 +46,13 @@
     padding: 5rem 0;
   }
   &_day-number {
+    grid-column: 1 / 2;
     font-size: 8.68rem;
     font-weight: 700;
     color: $color-grey-dark-2;
     margin-bottom: 2.4rem;
   }
+
   &_day-heading {
     font-size: 3rem;
     line-height: 1.2;
@@ -58,7 +60,11 @@
     font-weight: 700;
     letter-spacing: -0.5px;
     color: $color-grey-dark-3;
+    &-short {
+      margin-bottom: 7rem;
+    }
   }
+
   &_subheading {
     display: block;
     font-size: 1.6rem;
@@ -116,6 +122,7 @@
       bottom: -3rem;
     }
   }
+
   &-icon {
     display: flex;
     align-items: center;
@@ -157,6 +164,9 @@
   @include respond(tab-port) {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.grid--short {
+  row-gap: 0;
 }
 
 .composition {
@@ -264,5 +274,8 @@
     @include respond(phone) {
       width: 70rem;
     }
+  }
+  &-short {
+    grid-column: 1 / 3;
   }
 }
