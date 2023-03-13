@@ -129,13 +129,48 @@
     grid-row: unset;
   }
 }
-
+.col-1-row-3 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  @media only screen and (max-width: $bp_large) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+  }
+  @media only screen and (max-width: $bp_small) {
+    grid-column: 2 / 2;
+    grid-row: unset;
+  }
+}
 .col-2-row-3 {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   @media only screen and (max-width: $bp_large) {
-    grid-column: 2 / 3;
+    grid-column: 4 / 5;
     grid-row: 4 / 5;
+  }
+  @media only screen and (max-width: $bp_small) {
+    grid-column: 2 / 2;
+    grid-row: unset;
+  }
+}
+.col-3-row-3 {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  @media only screen and (max-width: $bp_large) {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+  @media only screen and (max-width: $bp_small) {
+    grid-column: 2 / 2;
+    grid-row: unset;
+  }
+}
+.col-1-row-4 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  @media only screen and (max-width: $bp_large) {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
   }
   @media only screen and (max-width: $bp_small) {
     grid-column: 2 / 2;
@@ -267,6 +302,22 @@
           $color-primary-dark
         ),
         url(../../img/galeries/great_walks/kepler.jpg);
+    }
+    &--8 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../../img/galeries/great_walks/rakiura.jpg);
+    }
+    &--wip {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../../img/galeries/wip.jpg);
     }
   }
   &_heading {
