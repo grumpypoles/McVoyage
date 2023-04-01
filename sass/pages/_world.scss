@@ -256,3 +256,52 @@
     animation-fill-mode: backwards; //start with the element being hidden
   }
 }
+
+/***********************/
+/* COMPOSITION SECTION */
+/***********************/
+.composition_os {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 5rem 1.6rem 1.6rem;
+}
+
+.composition_os-item img {
+  display: block;
+  width: 125%;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.composition_os-item {
+  overflow: hidden;
+}
+.composition_os-item img:hover {
+  transform: scale(1.25);
+}
+
+.composition_os-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.composition_os-item-4 img {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.composition_os-item-4 {
+  overflow: hidden;
+}
+.composition_os-item-4 img:hover {
+  transform: scale(1.25);
+}
+
+.clean-a_ref {
+  text-decoration: none;
+  color: $color-grey-dark;
+}

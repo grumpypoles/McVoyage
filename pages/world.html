@@ -20,41 +20,22 @@
 
 <body>
 
-  <div class="walk_navigation">
-    <input type="checkbox" class="walk_navigation_checkbox" id="navi-toggle">
 
-    <label for="navi-toggle" class="walk_navigation_button">
-      <span class="walk_navigation_icon">
-        &nbsp;
-      </span>
-    </label>
-    <div class="walk_navigation_background walk_navigation_background-os">&nbsp;</div>
-    <nav class="walk_navigation_nav">
-      <ul class="walk_navigation_list">
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>01</span>Greece</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>02</span>Munich</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>03</span>Barcelona</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>04</span>Amalfi Coast</a></li>
-        <!-- <li class="walk_navigation_item"><a href="/pages/wip.html" class="walk_navigation_link walk_navigation_link-os"><span>05 </span>Routeburn Track</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html" class="walk_navigation_link walk_navigation_link-os"><span>06 </span>Milford Track</a></li> -->
-        <li class="walk_navigation_item"><a href="great_walks.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>05 </span>Great
-            Walks</a></li>
-        <li class="walk_navigation_item"><a href="north_island.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>06 </span>North
-            Island</a></li>
-        <li class="walk_navigation_item"><a href="south_island.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>07 </span>South
-            Island</a></li>
-        <li class="walk_navigation_item"><a href="../index.html"
-            class="walk_navigation_link walk_navigation_link-os"><span>08 </span>Home</a></li>
 
-      </ul>
-    </nav>
+  <!-- Navigation -->
+  <div id="navigation-placeholder">
+
+  </div>
+  <script>
+    $.get("../pages/os_navigation.html", function (data) {
+      $("#navigation-placeholder").replaceWith(data);
+    });
+  </script>
+
+
+  <!-- end of the Navigation -->
+
+
   </div>
   <div class="os_topbar">
     <div class="os_topbar-gallery">
@@ -103,7 +84,7 @@
                 Walking / Car</span>
             </li>
           </ul>
-          <a href="/pages/wip.html" class="trip_btn card_btn--white">Details</a>
+          <a href="/pages/os-greece.html" class="trip_btn card_btn--white">Details</a>
         </div>
       </div>
       <div class="os_trip os_trip-c2-r1">
@@ -116,7 +97,7 @@
           <p class="os_trip-title">Munich</p>
           <ul class="os_trip-attributes">
             <li class="os_trip-attribute">
-              <ion-icon class="os_trip-icon" name="calendar-outline"></ion-icon><span>Dec-2019</span>
+              <ion-icon class="os_trip-icon" name="calendar-outline"></ion-icon><span>Dec-2009</span>
             </li>
             <li class="os_trip-attribute">
               <ion-icon class="os_trip-icon" name="hourglass-outline"></ion-icon><span>3 Days</span>
@@ -126,7 +107,7 @@
                 Walking</span>
             </li>
           </ul>
-          <a href="/pages/wip.html" class="trip_btn card_btn--white">Details</a>
+          <a href="/pages/os-munich.html" class="trip_btn card_btn--white">Details</a>
         </div>
       </div>
       <div class="os_trip os_trip-c3-r1">

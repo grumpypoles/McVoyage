@@ -29,6 +29,11 @@
     left: 5rem;
     bottom: 5rem;
   }
+  &-text-lcenter {
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+  }
 }
 
 .main_img {
@@ -60,6 +65,7 @@
     font-weight: 700;
     letter-spacing: -0.5px;
     color: $color-grey-dark-3;
+    padding-top: 2.5rem;
     &-short {
       margin-bottom: 7rem;
     }
