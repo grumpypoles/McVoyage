@@ -20,51 +20,18 @@
 
 <body>
 
-  <div class="walk_navigation">
-    <input type="checkbox" class="walk_navigation_checkbox" id="navi-toggle">
+  <!-- Navigation -->
+  <div id="navigation-placeholder">
 
-    <label for="navi-toggle" class="walk_navigation_button">
-      <span class="walk_navigation_icon">
-        &nbsp;
-      </span>
-    </label>
-    <div class="walk_navigation_background walk_navigation_background-si">&nbsp;</div>
-    <nav class="walk_navigation_nav">
-      <ul class="walk_navigation_list">
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>01</span>Queen Charlotte</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>02</span>Fiordland</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>03</span>Nydia Track</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>04</span>The Link Pathway</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>05
-            </span>Kaikoura Cost Track</a>
-        </li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>06
-            </span>Hump Ridge Track</a></li>
-        <li class="walk_navigation_item"><a href="/pages/wip.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>07
-            </span>Shorter Walks</a></li>
-        <li class="walk_navigation_item"><a href="great_walks.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>08 </span>Great
-            Walks</a></li>
-        <li class="walk_navigation_item"><a href="north_island.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>09 </span>North
-            Island</a></li>
-        <li class="walk_navigation_item"><a href="world.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>10 </span>Overseas</a>
-        </li>
-        <li class="walk_navigation_item"><a href="../index.html"
-            class="walk_navigation_link walk_navigation_link-si"><span>11 </span>Home</a></li>
-
-      </ul>
-    </nav>
   </div>
+  <script>
+    $.get("../pages/si_navigation.html", function (data) {
+      $("#navigation-placeholder").replaceWith(data);
+    });
+  </script>
 
+
+  <!-- end of the Navigation -->
 
   <header class="si_header">
     <div class="si_header_logo-box">
@@ -132,7 +99,7 @@
                   offering out of this world views of the Queen Charlotte and Kenepuru Sounds.
                 </p>
               </div>
-              <a href="" class="card_btn card_btn--white">Details</a>
+              <a href="/pages/wip.html" class="card_btn card_btn--white">Details</a>
             </div>
           </div>
         </div>

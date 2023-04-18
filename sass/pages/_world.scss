@@ -305,3 +305,10 @@
   text-decoration: none;
   color: $color-grey-dark;
 }
+.location-links {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}

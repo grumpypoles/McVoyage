@@ -2392,6 +2392,13 @@ body {
   text-decoration: none;
   color: hwb(0 47% 53%); }
 
+.location-links {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
+
 .gws_topbar {
   margin: 0;
   max-height: 60rem;
@@ -2481,6 +2488,12 @@ body {
   width: 100%;
   max-height: 100%; }
 
+.walk_day-img_icons {
+  align-items: center;
+  width: 100%;
+  max-height: 100%;
+  margin-bottom: 5rem; }
+
 .walk-icons {
   position: absolute;
   bottom: 2rem;
@@ -2496,6 +2509,23 @@ body {
     color: #2998ff; }
   @media only screen and (max-width: 56.25em) {
     .walk-icons {
+      bottom: -3rem; } }
+
+.walk-icons-uimage {
+  position: absolute;
+  bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  gap: 5rem; }
+  .walk-icons-uimage ion-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #2998ff; }
+  @media only screen and (max-width: 56.25em) {
+    .walk-icons-uimage {
       bottom: -3rem; } }
 
 .walk-icon {
@@ -2613,6 +2643,12 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 2.4rem;
+    padding-top: 2.4rem;
+    color: #333; }
+  .map-links-vertical {
+    list-style: none;
+    display: flex;
     gap: 2.4rem;
     padding-top: 2.4rem;
     color: #333; }

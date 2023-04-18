@@ -108,10 +108,35 @@
     width: 100%;
     max-height: 100%;
   }
+  &_day-img_icons {
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 5rem;
+  }
 
   &-icons {
     position: absolute;
     bottom: 2rem;
+    // margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    gap: 5rem;
+    ion-icon {
+      width: 2rem;
+      height: 2rem;
+      color: $color-tertiary-light;
+    }
+    @include respond(tab-port) {
+      bottom: -3rem;
+    }
+  }
+  &-icons-uimage {
+    position: absolute;
+    bottom: 0.5rem;
     // margin-top: 10rem;
     display: flex;
     align-items: center;
@@ -266,6 +291,14 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 2.4rem;
+    padding-top: 2.4rem;
+    color: #333;
+  }
+  &-links-vertical {
+    list-style: none;
+    display: flex;
+    //flex-direction: column;
     gap: 2.4rem;
     padding-top: 2.4rem;
     color: #333;
