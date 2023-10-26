@@ -29,9 +29,19 @@
     left: 5rem;
     bottom: 5rem;
   }
+  &-text-ltop {
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+  }
   &-text-lcenter {
     position: absolute;
     left: 50%;
+    bottom: 5rem;
+  }
+  &-text-rbottom {
+    position: absolute;
+    right: 5rem;
     bottom: 5rem;
   }
 }
