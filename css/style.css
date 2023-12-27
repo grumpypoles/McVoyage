@@ -241,7 +241,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #a6d094, #6ab04c);
+  background-image: linear-gradient(to right, #427d9d, #164863);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -427,7 +427,7 @@ body {
   .walk_navigation_background-ni {
     background-image: radial-gradient(#2998ff, #5643fa); }
   .walk_navigation_background-si {
-    background-image: radial-gradient(#a6d094, #6ab04c); }
+    background-image: radial-gradient(#427d9d, #164863); }
   .walk_navigation_background-os {
     background-image: radial-gradient(hwb(0 47% 53%), #999); }
   @media only screen and (max-width: 56.25em) {
@@ -488,7 +488,7 @@ body {
   color: #2998ff; }
 
 .walk_navigation_link-si:hover, .walk_navigation_link-si:active {
-  color: #a6d094; }
+  color: #427d9d; }
 
 .walk_navigation_link-os:hover, .walk_navigation_link-os:active {
   color: #999; }
@@ -1717,7 +1717,7 @@ body {
 /*********************/
 .si_header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(166, 208, 148, 0.8), rgba(106, 176, 76, 0.8)), url(../../img/galeries/south_island/south_island.jpg);
+  background-image: linear-gradient(to right bottom, rgba(66, 125, 157, 0.8), rgba(22, 72, 99, 0.8)), url(../../img/galeries/south_island/south_island.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1857,11 +1857,11 @@ body {
     .si_card_side--back {
       transform: rotateY(180deg); }
       .si_card_side--back-1 {
-        background-image: linear-gradient(to right bottom, #a6d094, #6ab04c); }
+        background-image: linear-gradient(to right bottom, #427d9d, #164863); }
       .si_card_side--back-2 {
-        background-image: linear-gradient(to right bottom, #a6d094, #6ab04c); }
+        background-image: linear-gradient(to right bottom, #427d9d, #164863); }
       .si_card_side--back-3 {
-        background-image: linear-gradient(to right bottom, #a6d094, #6ab04c); }
+        background-image: linear-gradient(to right bottom, #427d9d, #164863); }
   .si_card:hover .si_card_side--front {
     transform: rotateY(-180deg); }
   .si_card:hover .si_card_side--back {
@@ -1875,19 +1875,19 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .si_card_picture--1 {
-      background-image: linear-gradient(to right bottom, #a6d094, #6ab04c), url(../../img/galeries/south_island/Queen_Charlotte.jpg); }
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Queen_Charlotte.jpg); }
     .si_card_picture--2 {
-      background-image: linear-gradient(to right bottom, #a6d094, #6ab04c), url(../../img/galeries/south_island/Fiordland.jpg); }
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Fiordland.jpg); }
     .si_card_picture--3 {
-      background-image: linear-gradient(to right bottom, #a6d094, #6ab04c), url(../../img/galeries/south_island/Nydia_Track.jpg); }
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Nydia_Track.jpg); }
     .si_card_picture--4 {
-      background-image: linear-gradient(to right bottom, #a6d094, #6ab04c), url(../../img/galeries/south_island/The_Link.jpg); }
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/The_Link.jpg); }
     .si_card_picture--5 {
-      background-image: linear-gradient(to right bottom, #a6d094, #6ab04c), url(../../img/galeries/south_island/Kaikoura_Walk.jpg); }
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Kaikoura_Walk.jpg); }
     .si_card_picture--6 {
-      background-image: linear-gradient(to right bottom, #a6d094, #6ab04c), url(../../img/galeries/south_island/Hump_Ridge.jpg); }
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Hump_Ridge.jpg); }
     .si_card_picture--7 {
-      background-image: linear-gradient(to right bottom, #a6d094, #6ab04c), url(../../img/galeries/south_island/Short_Walks.jpg); }
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Short_Walks.jpg); }
   .si_card_heading {
     font-size: 2.8rem;
     font-size: 300;
@@ -1903,11 +1903,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .si_card_heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(166, 208, 148, 0.85), rgba(106, 176, 76, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(66, 125, 157, 0.85), rgba(22, 72, 99, 0.85)); }
     .si_card_heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)); }
     .si_card_heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(166, 208, 148, 0.85), rgba(106, 176, 76, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(66, 125, 157, 0.85), rgba(22, 72, 99, 0.85)); }
   .si_card_details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1921,7 +1921,7 @@ body {
         width: 2rem;
         height: 2rem;
         margin-right: 1.5rem;
-        color: #6ab04c; }
+        color: #164863; }
     .si_card_details-location, .si_card_details-date {
       margin-top: 5rem; }
   .si_card_cta {
