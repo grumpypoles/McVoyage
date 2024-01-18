@@ -2562,6 +2562,9 @@ body {
   font-weight: 700;
   color: #999;
   margin-bottom: 2.4rem; }
+  .walk_day-number-text {
+    font-size: 5rem;
+    font-weight: 700; }
 
 .walk_day-heading {
   font-size: 3rem;

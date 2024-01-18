@@ -66,6 +66,10 @@
     font-weight: 700;
     color: $color-grey-dark-2;
     margin-bottom: 2.4rem;
+    &-text {
+      font-size: 5rem;
+      font-weight: 700;
+    }
   }
 
   &_day-heading {
