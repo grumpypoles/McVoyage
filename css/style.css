@@ -1887,6 +1887,8 @@ body {
     .si_card_picture--6 {
       background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Hump_Ridge.jpg); }
     .si_card_picture--7 {
+      background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/South_2015.jpg); }
+    .si_card_picture--8 {
       background-image: linear-gradient(to right bottom, #427d9d, #164863), url(../../img/galeries/south_island/Short_Walks.jpg); }
   .si_card_heading {
     font-size: 2.8rem;

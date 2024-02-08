@@ -266,6 +266,14 @@
           $color-fourth-light,
           $color-fourth-dark
         ),
+        url(../../img/galeries/south_island/South_2015.jpg);
+    }
+    &--8 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-fourth-light,
+          $color-fourth-dark
+        ),
         url(../../img/galeries/south_island/Short_Walks.jpg);
     }
   }
