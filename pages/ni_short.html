@@ -1,600 +1,974 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../img/icons/favicon.png"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/script.js" defer></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  <!-- CSS only -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" type="image/png" href="../img/icons/favicon.png">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../scripts/script.js" defer></script>
+    <title>North Island - Short Walks</title>
+  </head>
 
-  <title>North Island - Short Walks</title>
-</head>
+  <body>
+    <!-- Navigation -->
+    <div id="navigation-placeholder"></div>
+    <script>
+      $.get("../pages/ni_navigation.html", function (data) {
+        $("#navigation-placeholder").replaceWith(data);
+      });
+    </script>
 
-<body>
+    <!-- end of the Navigation -->
 
-  <!-- Navigation -->
-  <div id="navigation-placeholder">
-
-  </div>
-  <script>
-    $.get("../pages/ni_navigation.html", function (data) {
-      $("#navigation-placeholder").replaceWith(data);
-    });
-  </script>
-
-
-  <!-- end of the Navigation -->
-
-  <div class="gws_topbar">
-    <div class="gws_topbar-gallery">
-      <picture>
-        <source srcset="../img/galeries/north_island/short_walks/nis_main.webp" type="image/webp" />
-        <source srcset="../img/galeries/north_island/short_walks/nis_main.jpg" type="image/jpg" />
-        <img src="/img/galeries/north_island/short_walks/nis_main.jpg" alt="View of Cook Strait">
-      </picture>
-      <div class="heading-1 gws_topbar-text-lbottom">North Island - Short Walks</div>
+    <div class="gws_topbar">
+      <div class="gws_topbar-gallery">
+        <picture>
+          <source
+            srcset="../img/galeries/north_island/short_walks/nis_main.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="../img/galeries/north_island/short_walks/nis_main.jpg"
+            type="image/jpg"
+          />
+          <img
+            src="/img/galeries/north_island/short_walks/nis_main.jpg"
+            alt="View of Cook Strait"
+          />
+        </picture>
+        <div class="heading-1 gws_topbar-text-lbottom">
+          North Island - Short Walks
+        </div>
+      </div>
     </div>
-  </div>
 
-  <section class="walks">
-    <section class="walk">
-      <div class="gw_lw-container grid grid--2--cols grid--short">
-        <div class="walk_day-img-box">
-          <div class="composition_ni-4">
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow1.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow1.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_pencarrow1.jpg"
-                  alt="View from around Pencarrow lighthouse" />
-              </picture>
-            </figure>
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow2.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow2.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_pencarrow2.jpg"
-                  alt="View from around Pencarrow lighthouse" />
-              </picture>
-            </figure>
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow3.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow3.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_pencarrow3.jpg"
-                  alt="View from around Pencarrow lighthouse" />
-              </picture>
-            </figure>
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow4.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_pencarrow4.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_pencarrow4.jpg"
-                  alt="View from around Pencarrow lighthouse" />
-              </picture>
-            </figure>
-          </div>
-        </div>
-        <div class="walk_text-box">
-          <p class="walk_day-number">Pencarrow Light House</p>
-          <h3 class="walk_day-heading walk_day-heading-short">
-            Entrance to Wellington Harbour
-          </h3>
-          <div class="walk_day-img-box">
-            <div class="walk-icons">
-              <div class="walk-icon">
-                <ion-icon name="calendar-outline"></ion-icon>
-                <p>30-Dec-2020</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="hourglass-outline"></ion-icon>
-                <p>3:40 Hrs</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="footsteps-outline"></ion-icon>
-                <p>15.40 kms</p>
-              </div>
-            </div>
-
-          </div>
-          <p class="walk_day-description">
-            On a sunny, windless day nothing beats the walk along the Wellington Harbour coastline to Pencarrow
-            Lighthouse. <br>
-            It takes only 20 minutes to get to the carpark near Wildfinder, the bicycle hiring outlet from our place in
-            Wainuiomata. From there we follow the coastline road towards the Barrett&apos;s Reef at the entrance to the
-            harbour, passing on the way Burdan&apos;s Gate, Camp Bay, The Pipes - a well-known surf spot, and Hinds
-            Point.
-            The track is flat to the Pencarrow lower lighthouse. The upper Pencarrow lighthouse stands on a hill 75
-            meters above sea level. To get up to it we took the harder, steeper but shorter track signposted before the
-            lower lighthouse. In reality, the trail wasn't hard. We saw someone on a powerful e-bike go all the way up
-            to reach the summit to the surprise of other cyclists who left their bikes and walked up. We spent some time
-            around the lighthouse enjoying spectacular views of the Wellington Harbour Heads before continuing to the
-            Pencarrow Head lookout. From there, to the south we had panoramic views of Cook Strait and the Kaikoura
-            Ranges and to the north, we could see Lake Kohangapirpiri and the Remutaka Ranges. We were very pleased to
-            see quite a few informational boards explaining the history of the lighthouse and giving insight into life
-            on the coast in the nineteenth century. After a short lunch break, we strolled leisurely back to Eastbourne.
-            It was a very nice way to finish our walking for 2020.
-          </p>
-
-        </div>
-        <div class="map map-short">
-          <div class="map-icons">
-            <ul class="map-links">
-              <li><a class="map-link" href="https://nzhistory.govt.nz/culture/pencarrow-lighthouse/people"
-                  target="_blank">
-                  <ion-icon class="map-icon" name="book-outline"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a class="map-link" href="https://photos.app.goo.gl/VQ6pRLivAA8TjzSJ7" target="_blank">
-                  <ion-icon class="map-icon" name="camera-outline"></ion-icon>
-                </a>
-              </li>
-              <li><a class="map-link" href="https://www.youtube.com/watch?v=X_23rJMyntY" target="_blank">
-                  <ion-icon class="map-icon" name="videocam-outline"></ion-icon>
-                </a></li>
-              <li><a class="map-link"
-                  href="https://www.gw.govt.nz/assets/Documents/2022/08/Parangarahu-Lakes-Trail-Map.pdf"
-                  target="_blank">
-                  <ion-icon class="map-icon" name="map-outline"></ion-icon>
-                </a></li>
-
-
-            </ul>
-          </div>
-          <div class="map-img-box">
-            <iframe
-              src="https://www.google.com/maps/d/u/0/embed?mid=1RBEMIg5fhi3T57uL-vteOOe-roTTUNmY&ehbc=2E312F"></iframe>
-          </div>
-
-        </div>
-      </div>
-      <div class="gw_lw-container grid grid--2--cols grid--short">
-        <div class="walk_text-box">
-          <p class="walk_day-number">Paekakariki Escarpment</p>
-          <h3 class="walk_day-heading walk_day-heading-short">
-            Paekakariki to Plimmerton
-          </h3>
-          <div class="walk_day-img-box">
-            <div class="walk-icons">
-              <div class="walk-icon">
-                <ion-icon name="calendar-outline"></ion-icon>
-                <p>10-Jan-2021</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="hourglass-outline"></ion-icon>
-                <p>5:12 Hrs</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="footsteps-outline"></ion-icon>
-                <p>15.20 kms</p>
-              </div>
-            </div>
-
-          </div>
-          <p class="walk_day-description">
-            We must be the last members of our family to walk the Paekakariki Escarpment. It had been on our to-do list
-            for a very long time, but we always managed to find an excuse to avoid this walk. Finally, when we saw that
-            Tararua Tramping Club was organising a Sunday walk we decided it was time to do this hike. We met with the
-            others members of TTC at the Plimmerton railway station and caught the train to Paekakariki. Heading south
-            the trail starts by following the Kāpiti railway line then veers uphill and across privately-owned farmland.
-            We heard lots of stories about the 1200 steps but after intensive practice in step climbing in Italy on
-            Amalfi Coast, we didn&apos;t have any problems negotiating them. Yet again the weather was on our side and
-            we
-            were able to fully appreciate the magnificent views of the ocean and Kapiti Island. Near Pukerua Bay we
-            crossed a few swing bridges that just made this hike more interesting. The walk is noteworthy for its
-            excellent signage providing a lot of interesting history. The Paekakariki Escarpment ends close to the
-            Pukerua Bay railway station. We decided to carry on back to Plimmerton. Being somehow lazy we played chicken
-            on the main highway trying to cross it, instead of using the overbridge. The track to Plimmerton runs
-            parallel to SH59 and later goes through some of the industrial parts of the settlement. It was a big
-            contrast to the picturesque Escarpment.
-          </p>
-
-        </div>
-        <div class="walk_day-img-box">
+    <section class="walks">
+      <section class="walk">
+        <div class="gw_lw-container grid grid--2--cols grid--short">
           <div class="walk_day-img-box">
             <div class="composition_ni-4">
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment1.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment1.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_escarpment1.jpg"
-                    alt="View from Paekakariki Escarpment" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow1.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_pencarrow1.jpg"
+                    alt="View from around Pencarrow lighthouse"
+                  />
                 </picture>
               </figure>
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment2.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment2.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_escarpment2.jpg"
-                    alt="View from Paekakariki Escarpment" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow2.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_pencarrow2.jpg"
+                    alt="View from around Pencarrow lighthouse"
+                  />
                 </picture>
               </figure>
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment3.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment3.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_escarpment3.jpg"
-                    alt="View from Paekakariki Escarpment" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow3.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_pencarrow3.jpg"
+                    alt="View from around Pencarrow lighthouse"
+                  />
                 </picture>
               </figure>
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment4.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_escarpment4.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_escarpment.jpg"
-                    alt="View from Paekakariki Escarpment" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow4.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_pencarrow4.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_pencarrow4.jpg"
+                    alt="View from around Pencarrow lighthouse"
+                  />
                 </picture>
               </figure>
             </div>
           </div>
-        </div>
-        <div class="map map-short">
-          <div class="map-icons">
-            <ul class="map-links">
-              <li><a class="map-link" href="https://paekakariki.nz/listings/paekakariki-escarpment-track/"
-                  target="_blank">
-                  <ion-icon class="map-icon" name="book-outline"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a class="map-link" href="https://photos.app.goo.gl/qtE3bAYfFykRze2s7" target="_blank">
-                  <ion-icon class="map-icon" name="camera-outline"></ion-icon>
-                </a>
-              </li>
-              <li><a class="map-link" href="https://www.youtube.com/watch?v=XfloZxxewQI" target="_blank">
-                  <ion-icon class="map-icon" name="videocam-outline"></ion-icon>
-                </a></li>
-            </ul>
+          <div class="walk_text-box">
+            <p class="walk_day-number">Pencarrow Light House</p>
+            <h3 class="walk_day-heading walk_day-heading-short">
+              Entrance to Wellington Harbour
+            </h3>
+            <div class="walk_day-img-box">
+              <div class="walk-icons">
+                <div class="walk-icon">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <p>30-Dec-2020</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <p>3:40 Hrs</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="footsteps-outline"></ion-icon>
+                  <p>15.40 kms</p>
+                </div>
+              </div>
+            </div>
+            <p class="walk_day-description">
+              On a sunny, windless day nothing beats the walk along the
+              Wellington Harbour coastline to Pencarrow Lighthouse. <br />
+              It takes only 20 minutes to get to the carpark near Wildfinder,
+              the bicycle hiring outlet from our place in Wainuiomata. From
+              there we follow the coastline road towards the Barrett&apos;s Reef
+              at the entrance to the harbour, passing on the way Burdan&apos;s
+              Gate, Camp Bay, The Pipes - a well-known surf spot, and Hinds
+              Point. The track is flat to the Pencarrow lower lighthouse. The
+              upper Pencarrow lighthouse stands on a hill 75 meters above sea
+              level. To get up to it we took the harder, steeper but shorter
+              track signposted before the lower lighthouse. In reality, the
+              trail wasn't hard. We saw someone on a powerful e-bike go all the
+              way up to reach the summit to the surprise of other cyclists who
+              left their bikes and walked up. We spent some time around the
+              lighthouse enjoying spectacular views of the Wellington Harbour
+              Heads before continuing to the Pencarrow Head lookout. From there,
+              to the south we had panoramic views of Cook Strait and the
+              Kaikoura Ranges and to the north, we could see Lake Kohangapirpiri
+              and the Remutaka Ranges. We were very pleased to see quite a few
+              informational boards explaining the history of the lighthouse and
+              giving insight into life on the coast in the nineteenth century.
+              After a short lunch break, we strolled leisurely back to
+              Eastbourne. It was a very nice way to finish our walking for 2020.
+            </p>
           </div>
-          <div class="map-img-box">
-            <iframe
-              src="https://www.google.com/maps/d/u/0/embed?mid=1uKOfhNCpF3K1UUl3brkixKDq16ohPgHF&ehbc=2E312F"></iframe>
+          <div class="map map-short">
+            <div class="map-icons">
+              <ul class="map-links">
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://nzhistory.govt.nz/culture/pencarrow-lighthouse/people"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="book-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://photos.app.goo.gl/VQ6pRLivAA8TjzSJ7"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="camera-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.youtube.com/watch?v=X_23rJMyntY"
+                    target="_blank"
+                  >
+                    <ion-icon
+                      class="map-icon"
+                      name="videocam-outline"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.gw.govt.nz/assets/Documents/2022/08/Parangarahu-Lakes-Trail-Map.pdf"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="map-outline"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="map-img-box">
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1RBEMIg5fhi3T57uL-vteOOe-roTTUNmY&ehbc=2E312F"
+              ></iframe>
+            </div>
           </div>
-
         </div>
-      </div>
-      <div class="gw_lw-container grid grid--2--cols grid--short">
-        <div class="walk_day-img-box">
-          <div class="composition_ni-4">
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont1.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont1.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_belmont1.jpg" alt="View of Belmont Park" />
-              </picture>
-            </figure>
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont2.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont2.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_belmont2.jpg" alt="View of Belmont Park" />
-              </picture>
-            </figure>
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont3.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont3.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_belmont3.jpg" alt="View of Belmont Park" />
-              </picture>
-            </figure>
-            <figure class="composition_ni-item-4">
-              <picture>
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont4.webp" type="image/webp" />
-                <source srcset="../img/galeries/north_island/short_walks/nis_belmont4.jpg" type="image/jpg" />
-                <img src="../img/galeries/north_island/short_walks/nis_belmont4.jpg" alt="View of Belmont Park" />
-              </picture>
-            </figure>
+        <div class="gw_lw-container grid grid--2--cols grid--short">
+          <div class="walk_text-box">
+            <p class="walk_day-number">Paekakariki Escarpment</p>
+            <h3 class="walk_day-heading walk_day-heading-short">
+              Paekakariki to Plimmerton
+            </h3>
+            <div class="walk_day-img-box">
+              <div class="walk-icons">
+                <div class="walk-icon">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <p>10-Jan-2021</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <p>5:12 Hrs</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="footsteps-outline"></ion-icon>
+                  <p>15.20 kms</p>
+                </div>
+              </div>
+            </div>
+            <p class="walk_day-description">
+              We must be the last members of our family to walk the Paekakariki
+              Escarpment. It had been on our to-do list for a very long time,
+              but we always managed to find an excuse to avoid this walk.
+              Finally, when we saw that Tararua Tramping Club was organising a
+              Sunday walk we decided it was time to do this hike. We met with
+              the others members of TTC at the Plimmerton railway station and
+              caught the train to Paekakariki. Heading south the trail starts by
+              following the Kāpiti railway line then veers uphill and across
+              privately-owned farmland. We heard lots of stories about the 1200
+              steps but after intensive practice in step climbing in Italy on
+              Amalfi Coast, we didn&apos;t have any problems negotiating them.
+              Yet again the weather was on our side and we were able to fully
+              appreciate the magnificent views of the ocean and Kapiti Island.
+              Near Pukerua Bay we crossed a few swing bridges that just made
+              this hike more interesting. The walk is noteworthy for its
+              excellent signage providing a lot of interesting history. The
+              Paekakariki Escarpment ends close to the Pukerua Bay railway
+              station. We decided to carry on back to Plimmerton. Being somehow
+              lazy we played chicken on the main highway trying to cross it,
+              instead of using the overbridge. The track to Plimmerton runs
+              parallel to SH59 and later goes through some of the industrial
+              parts of the settlement. It was a big contrast to the picturesque
+              Escarpment.
+            </p>
           </div>
-        </div>
-        <div class="walk_text-box">
-          <p class="walk_day-number">Belmont Park</p>
-          <h3 class="walk_day-heading walk_day-heading-short">
-            Western Hills
-          </h3>
           <div class="walk_day-img-box">
-            <div class="walk-icons">
-              <div class="walk-icon">
-                <ion-icon name="calendar-outline"></ion-icon>
-                <p>30-Dec-2020</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="hourglass-outline"></ion-icon>
-                <p>3:40 Hrs</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="footsteps-outline"></ion-icon>
-                <p>15.40 kms</p>
+            <div class="walk_day-img-box">
+              <div class="composition_ni-4">
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment1.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment1.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_escarpment1.jpg"
+                      alt="View from Paekakariki Escarpment"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment2.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment2.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_escarpment2.jpg"
+                      alt="View from Paekakariki Escarpment"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment3.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment3.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_escarpment3.jpg"
+                      alt="View from Paekakariki Escarpment"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment4.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_escarpment4.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_escarpment.jpg"
+                      alt="View from Paekakariki Escarpment"
+                    />
+                  </picture>
+                </figure>
               </div>
             </div>
-
           </div>
-          <p class="walk_day-description">
-            Its suppose to be a short walk to the Belmont Trig but it ended to be much longer one, which included some
-            parts of the western suburbs we didn&apos;t existed. The walk started at the Korokoro Stream Bridge and
-            followed the Korokoro Stream till Korokoro Fork. At the fork we took the well signposted track to our left
-            with the aim to climb to the top of the Belmont Trig (457m). Upon reaching the trig we were rewarded with
-            fantastic views from the Tararuas to the Kaikura ranges. Somehow going down via farmland we missed the right
-            turn and ended in the suburban area. We must have spent a good hour or so before we managed to get into the
-            park at the Oakleigh Street entrance. In no time at all we reach the Korokoro Dam and were on our way back
-            to the carpark walking along the stream.
-
-        </div>
-        <div class="map map-short">
-          <div class="map-icons">
-            <ul class="map-links">
-              <li><a class="map-link" href="https://www.gw.govt.nz/parks/belmont-regional-park/" target="_blank">
-                  <ion-icon class="map-icon" name="book-outline"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a class="map-link" href="https://photos.app.goo.gl/8kHFJpVJq7iFwF9u7" target="_blank">
-                  <ion-icon class="map-icon" name="camera-outline"></ion-icon>
-                </a>
-              </li>
-              <li><a class="map-link" href="https://www.youtube.com/watch?v=SIpIatLQ0lA" target="_blank">
-                  <ion-icon class="map-icon" name="videocam-outline"></ion-icon>
-                </a></li>
-            </ul>
-          </div>
-          <div class="map-img-box">
-            <iframe
-              src="https://www.google.com/maps/d/u/0/embed?mid=1AcjmzQrkKWoF9AjIoEGQwiCm-Qg4Zog0&ehbc=2E312F"></iframe>
-          </div>
-
-        </div>
-      </div>
-      <div class="gw_lw-container grid grid--2--cols grid--short">
-        <div class="walk_text-box">
-          <p class="walk_day-number">Tarawera Trial</p>
-          <h3 class="walk_day-heading walk_day-heading-short">
-            Around Rotorua
-          </h3>
-          <div class="walk_day-img-box">
-            <div class="walk-icons">
-              <div class="walk-icon">
-                <ion-icon name="calendar-outline"></ion-icon>
-                <p>05-Apr-2023</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="hourglass-outline"></ion-icon>
-                <p>5:26 Hrs</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="footsteps-outline"></ion-icon>
-                <p>15.70 kms</p>
-              </div>
+          <div class="map map-short">
+            <div class="map-icons">
+              <ul class="map-links">
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://paekakariki.nz/listings/paekakariki-escarpment-track/"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="book-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://photos.app.goo.gl/qtE3bAYfFykRze2s7"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="camera-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.youtube.com/watch?v=XfloZxxewQI"
+                    target="_blank"
+                  >
+                    <ion-icon
+                      class="map-icon"
+                      name="videocam-outline"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
             </div>
-
+            <div class="map-img-box">
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1uKOfhNCpF3K1UUl3brkixKDq16ohPgHF&ehbc=2E312F"
+              ></iframe>
+            </div>
           </div>
-          <p class="walk_day-description">
-            A 5 minute drive from the Blue Lake Top 10 Holiday Park took us to the well-signed Te Wairoa car park. We
-            took our time to reach Tarawera Landing. We enjoyed the easy, slightly downhill stroll toward Kotukutuku
-            Bay. We listened to the sounds of Te Wairoa Falls and observed a female wallaby with her little joey. From
-            the Tarawera Landing, the track runs almost parallel to the lake shore to Hawaiki Bay and later Hinau Bay.
-            At the halfway mark we started our first noticeable climb - 400 meters to reach the Oneroa Lookout, a lovely
-            spot to sit down and have lunch while enjoying views of Lake Tarawera. From here the descent took us to Te
-            Wairau Amenity Area followed by the second, this time a bit steeper, 500 meters climb to the Rotomahana
-            Lookout. Fiona, being a much faster climber than I, reached the top well before me, and by the time we met
-            at the top of the lookout, she was ready to start the last stage of the trail. On the way down I caught up
-            with her and we finished the track together. With plenty of time to spare, we indulged ourselves in a hot
-            water soaking at the edge of the lake while waiting for the water taxi from <a
-              href="https://www.totallytarawera.com/tarawera-trail/" target="_blank">Totally Tarawera </a>.<br> The
-            Tarawera Trail was a pleasant easy to moderate 15 km walk. We took a little longer than the advertised
-            time on the first section. It is worth mentioning here that excellent signage at all stages helped us to
-            maintain the required walking pace to make sure we had enough time to have our swim at the Hot Water Bay
-            before being picked up by the water taxi. The service by <a
-              href="https://www.totallytarawera.com/tarawera-trail/" target="_blank">Totally Tarawera </a> of the boat
-            trip across the lake and van shuttle back to the carpark was very efficient and reasonably priced.
-
-          </p>
-
         </div>
-        <div class="walk_day-img-box">
+        <div class="gw_lw-container grid grid--2--cols grid--short">
           <div class="walk_day-img-box">
             <div class="composition_ni-4">
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial1.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial1.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_taraweratrial1.jpg"
-                    alt="View of Tarawera Lake and Trial" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont1.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_belmont1.jpg"
+                    alt="View of Belmont Park"
+                  />
                 </picture>
               </figure>
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial2.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial2.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_taraweratrial2.jpg"
-                    alt="View of Tarawera Lake and Trial" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont2.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_belmont2.jpg"
+                    alt="View of Belmont Park"
+                  />
                 </picture>
               </figure>
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial3.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial3.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_taraweratrial3.jpg"
-                    alt="View of Tarawera Lake and Trial" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont3.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_belmont3.jpg"
+                    alt="View of Belmont Park"
+                  />
                 </picture>
               </figure>
               <figure class="composition_ni-item-4">
                 <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial4.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial4.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_taraweratrial4.jpg"
-                    alt="View of Tarawera Lake and Trial" />
-                </picture>
-              </figure>
-              <figure class="composition_ni-item-4">
-                <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial5.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial5.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_taraweratrial5.jpg"
-                    alt="View of Tarawera Lake and Trial" />
-                </picture>
-              </figure>
-              <figure class="composition_ni-item-4">
-                <picture>
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial6.webp" type="image/webp" />
-                  <source srcset="../img/galeries/north_island/short_walks/nis_taraweratrial6.jpg" type="image/jpg" />
-                  <img src="../img/galeries/north_island/short_walks/nis_taraweratrial6.jpg"
-                    alt="View of Tarawera Lake and Trial" />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont4.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../img/galeries/north_island/short_walks/nis_belmont4.jpg
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="../img/galeries/north_island/short_walks/nis_belmont4.jpg"
+                    alt="View of Belmont Park"
+                  />
                 </picture>
               </figure>
             </div>
           </div>
-        </div>
-        <div class="map map-short">
-          <div class="map-icons">
-            <ul class="map-links">
-              <li><a class="map-link"
-                  href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/bay-of-plenty/places/lake-tarawera-scenic-reserve/things-to-do/tarawera-trail/"
-                  target="_blank">
-                  <ion-icon class="map-icon" name="book-outline"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a class="map-link" href="https://photos.app.goo.gl/qtE3bAYfFykRze2s7" target="_blank">
-                  <ion-icon class="map-icon" name="camera-outline"></ion-icon>
-                </a>
-              </li>
-              <li><a class="map-link" href="https://www.youtube.com/watch?v=uMdy7osMlSI" target="_blank">
-                  <ion-icon class="map-icon" name="videocam-outline"></ion-icon>
-                </a></li>
-              <li><a class="map-link"
-                  href="https://rotoruanz.blob.core.windows.net/rotoruanz/rotoruanz/media/pdf/tips/tarawera-trail-brochure.pdf"
-                  target="_blank">
-                  <ion-icon class="map-icon" name="map-outline"></ion-icon>
-                </a></li>
-
-
-            </ul>
+          <div class="walk_text-box">
+            <p class="walk_day-number">Belmont Park</p>
+            <h3 class="walk_day-heading walk_day-heading-short">
+              Western Hills
+            </h3>
+            <div class="walk_day-img-box">
+              <div class="walk-icons">
+                <div class="walk-icon">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <p>30-Dec-2020</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <p>3:40 Hrs</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="footsteps-outline"></ion-icon>
+                  <p>15.40 kms</p>
+                </div>
+              </div>
+            </div>
+            <p class="walk_day-description">
+              Its suppose to be a short walk to the Belmont Trig but it ended to
+              be much longer one, which included some parts of the western
+              suburbs we didn&apos;t existed. The walk started at the Korokoro
+              Stream Bridge and followed the Korokoro Stream till Korokoro Fork.
+              At the fork we took the well signposted track to our left with the
+              aim to climb to the top of the Belmont Trig (457m). Upon reaching
+              the trig we were rewarded with fantastic views from the Tararuas
+              to the Kaikura ranges. Somehow going down via farmland we missed
+              the right turn and ended in the suburban area. We must have spent
+              a good hour or so before we managed to get into the park at the
+              Oakleigh Street entrance. In no time at all we reach the Korokoro
+              Dam and were on our way back to the carpark walking along the
+              stream.
+            </p>
           </div>
-          <div class="map-img-box">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1KiomvTpiK8dGrCmKnisI3nyEuhVy6QQ&ehbc=2E312F"></iframe>
-          </div>
 
+          <div class="map map-short">
+            <div class="map-icons">
+              <ul class="map-links">
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.gw.govt.nz/parks/belmont-regional-park/"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="book-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://photos.app.goo.gl/8kHFJpVJq7iFwF9u7"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="camera-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.youtube.com/watch?v=SIpIatLQ0lA"
+                    target="_blank"
+                  >
+                    <ion-icon
+                      class="map-icon"
+                      name="videocam-outline"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="map-img-box">
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1AcjmzQrkKWoF9AjIoEGQwiCm-Qg4Zog0&ehbc=2E312F"
+              ></iframe>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- <div class="gw_lw-container grid grid--2--cols grid--short">
-        <div class="walk_text-box">
-          <p class="walk_day-number">Te Whiti Riser</p>
-          <h3 class="walk_day-heading walk_day-heading-short">
-            Paekakariki to Plimmerton
-          </h3>
+        <div class="gw_lw-container grid grid--2--cols grid--short">
+          <div class="walk_text-box">
+            <p class="walk_day-number">Tarawera Trial</p>
+            <h3 class="walk_day-heading walk_day-heading-short">
+              Around Rotorua
+            </h3>
+            <div class="walk_day-img-box">
+              <div class="walk-icons">
+                <div class="walk-icon">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <p>05-Apr-2023</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <p>5:26 Hrs</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="footsteps-outline"></ion-icon>
+                  <p>15.70 kms</p>
+                </div>
+              </div>
+            </div>
+            <p class="walk_day-description">
+              A 5 minute drive from the Blue Lake Top 10 Holiday Park took us to
+              the well-signed Te Wairoa car park. We took our time to reach
+              Tarawera Landing. We enjoyed the easy, slightly downhill stroll
+              toward Kotukutuku Bay. We listened to the sounds of Te Wairoa
+              Falls and observed a female wallaby with her little joey. From the
+              Tarawera Landing, the track runs almost parallel to the lake shore
+              to Hawaiki Bay and later Hinau Bay. At the halfway mark we started
+              our first noticeable climb - 400 meters to reach the Oneroa
+              Lookout, a lovely spot to sit down and have lunch while enjoying
+              views of Lake Tarawera. From here the descent took us to Te Wairau
+              Amenity Area followed by the second, this time a bit steeper, 500
+              meters climb to the Rotomahana Lookout. Fiona, being a much faster
+              climber than I, reached the top well before me, and by the time we
+              met at the top of the lookout, she was ready to start the last
+              stage of the trail. On the way down I caught up with her and we
+              finished the track together. With plenty of time to spare, we
+              indulged ourselves in a hot water soaking at the edge of the lake
+              while waiting for the water taxi from
+              <a
+                href="https://www.totallytarawera.com/tarawera-trail/"
+                target="_blank"
+                >Totally Tarawera </a
+              >.<br />
+              The Tarawera Trail was a pleasant easy to moderate 15 km walk. We
+              took a little longer than the advertised time on the first
+              section. It is worth mentioning here that excellent signage at all
+              stages helped us to maintain the required walking pace to make
+              sure we had enough time to have our swim at the Hot Water Bay
+              before being picked up by the water taxi. The service by
+              <a
+                href="https://www.totallytarawera.com/tarawera-trail/"
+                target="_blank"
+                >Totally Tarawera
+              </a>
+              of the boat trip across the lake and van shuttle back to the
+              carpark was very efficient and reasonably priced.
+            </p>
+          </div>
           <div class="walk_day-img-box">
-            <div class="walk-icons">
-              <div class="walk-icon">
-                <ion-icon name="calendar-outline"></ion-icon>
-                <p>10-Jan-2021</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="hourglass-outline"></ion-icon>
-                <p>5:12 Hrs</p>
-              </div>
-              <div class="walk-icon">
-                <ion-icon name="footsteps-outline"></ion-icon>
-                <p>15.20 kms</p>
+            <div class="walk_day-img-box">
+              <div class="composition_ni-4">
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial1.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial1.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_taraweratrial1.jpg"
+                      alt="View of Tarawera Lake and Trial"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial2.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial2.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_taraweratrial2.jpg"
+                      alt="View of Tarawera Lake and Trial"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial3.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial3.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_taraweratrial3.jpg"
+                      alt="View of Tarawera Lake and Trial"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial4.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial4.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_taraweratrial4.jpg"
+                      alt="View of Tarawera Lake and Trial"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial5.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial5.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_taraweratrial5.jpg"
+                      alt="View of Tarawera Lake and Trial"
+                    />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial6.webp
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ../img/galeries/north_island/short_walks/nis_taraweratrial6.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="../img/galeries/north_island/short_walks/nis_taraweratrial6.jpg"
+                      alt="View of Tarawera Lake and Trial"
+                    />
+                  </picture>
+                </figure>
               </div>
             </div>
-
           </div>
-          <p class="walk_day-description">
-            We must be the last members of our family to walk the Paekakariki Escarpment. It had been on our to-do list
-            for a very long time, but we always managed to find an excuse to avoid this walk. Finally, when we saw that
-            Tararua Tramping Club was organising a Sunday walk we decided it was time to do this hike. We met with the
-            others members of TTC at the Plimmerton railway station and caught the train to Paekakariki. Heading south
-            the trail starts by following the Kāpiti railway line then veers uphill and across privately-owned farmland.
-            We heard lots of stories about the 1200 steps but after intensive practice in step climbing in Italy on
-            Amalfi Coast, we didn&apos;t have any problems negotiating them. Yet again the weather was on our side and
-            we
-            were able to fully appreciate the magnificent views of the ocean and Kapiti Island. Near Pukerua Bay we
-            crossed a few swing bridges that just made this hike more interesting. The walk is noteworthy for its
-            excellent signage providing a lot of interesting history. The Paekakariki Escarpment ends close to the
-            Pukerua Bay railway station. We decided to carry on back to Plimmerton. Being somehow lazy we played chicken
-            on the main highway trying to cross it, instead of using the overbridge. The track to Plimmerton runs
-            parallel to SH59 and later goes through some of the industrial parts of the settlement. It was a big
-            contrast to the picturesque Escarpment.
-          </p>
-
+          <div class="map map-short">
+            <div class="map-icons">
+              <ul class="map-links">
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/bay-of-plenty/places/lake-tarawera-scenic-reserve/things-to-do/tarawera-trail/"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="book-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://photos.app.goo.gl/qtE3bAYfFykRze2s7"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="camera-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.youtube.com/watch?v=uMdy7osMlSI"
+                    target="_blank"
+                  >
+                    <ion-icon
+                      class="map-icon"
+                      name="videocam-outline"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://rotoruanz.blob.core.windows.net/rotoruanz/rotoruanz/media/pdf/tips/tarawera-trail-brochure.pdf"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="map-outline"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="map-img-box">
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1KiomvTpiK8dGrCmKnisI3nyEuhVy6QQ&ehbc=2E312F"
+              ></iframe>
+            </div>
+          </div>
         </div>
-        <div class="walk_day-img-box">
+        <div class="gw_lw-container grid grid--2--cols grid--short">
+
           <div class="walk_day-img-box">
-            <div class="composition_ni-4">
-              <figure class="composition_ni-item-4">
-                <img src="../img/galeries/north_island/short_walks/nis_escarpment1.jpg"
-                  alt="View from Paekakariki Escarpment" />
-              </figure>
-              <figure class="composition_ni-item-4">
-                <img src="../img/galeries/north_island/short_walks/nis_escarpment2.jpg"
-                  alt="View from Paekakariki Escarpment" />
-              </figure>
-              <figure class="composition_ni-item-4">
-                <img src="../img/galeries/north_island/short_walks/nis_escarpment3.jpg"
-                  alt="View from Paekakariki Escarpment" />
-              </figure>
-              <figure class="composition_ni-item-4">
-                <img src="../img/galeries/north_island/short_walks/nis_escarpment4.jpg"
-                  alt="View from Paekakariki Escarpment" />
-              </figure>
+            <div class="walk_day-img-box">
+              <div class="composition_ni-4">
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm1.webp" type="image/webp" />
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm1.jpg" type="image/jpg" />
+                    <img src="../img/galeries/north_island/short_walks/nis_chasm1.jpg" alt="Patuna Chasm Walk Wairarapa New Zealand" />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm2.webp" type="image/webp" />
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm2.jpg" type="image/jpg" />
+                    <img src="../img/galeries/north_island/short_walks/nis_chasm2.jpg" alt="Patuna Chasm Walk Wairarapa New Zealand" />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm3.webp" type="image/webp" />
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm3.jpg" type="image/jpg" />
+                    <img src="../img/galeries/north_island/short_walks/nis_chasm3.jpg" alt="Patuna Chasm Walk Wairarapa New Zealand" />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm4.webp" type="image/webp" />
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm4.jpg" type="image/jpg" />
+                    <img src="../img/galeries/north_island/short_walks/nis_chasm4.jpg" alt="Patuna Chasm Walk Wairarapa New Zealand" />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm5.webp" type="image/webp" />
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm5.jpg" type="image/jpg" />
+                    <img src="../img/galeries/north_island/short_walks/nis_chasm5.jpg" alt="Patuna Chasm Walk Wairarapa New Zealand" />
+                  </picture>
+                </figure>
+                <figure class="composition_ni-item-4">
+                  <picture>
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm6.webp" type="image/webp" />
+                    <source srcset="../img/galeries/north_island/short_walks/nis_chasm6.jpg" type="image/jpg" />
+                    <img src="../img/galeries/north_island/short_walks/nis_chasm6.jpg" alt="Patuna Chasm Walk Wairarapa New Zealand" />
+                  </picture>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="walk_text-box">
+            <p class="walk_day-number">Patuna Chasm Walk</p>
+            <h3 class="walk_day-heading walk_day-heading-short">
+              A Christmas present hard to match
+            </h3>
+            <div class="walk_day-img-box">
+              <div class="walk-icons">
+                <div class="walk-icon">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <p>23-Mar-2023</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <p>2:53 Hrs</p>
+                </div>
+                <div class="walk-icon">
+                  <ion-icon name="footsteps-outline"></ion-icon>
+                  <p>7.20 kms</p>
+                </div>
+              </div>
+            </div>
+            <p class="walk_day-description">
+              This hidden Wairarapa gem is located just a 20-minute drive from
+              Martinborough on Patuna Farm. <br>
+              Following a brief safety
+              orientation, we settled onto trailers pulled by robust 4WDs,
+              embarking on a 15-minute journey to the beginning of our trek. The
+              initial walk amongst regenerating native bush took us to a
+              limestone wave-like cliff. From there, descending sharply, we
+              entered the chasm and walked along the Ruakokopatuna River toward
+              beautiful moss-lined waterfalls. Navigating slippery rocks posed
+              some hazards but also provided moments of laughter. Retracing our
+              steps, we marvelled at the chasm&apos;s depths and the play of light
+              against its limestone walls. A muddy uphill detour led us to a
+              small cave covered in descent-sized stalactites. Upon reaching the
+              &quot;dry exit&quot;, Abi opted to get on the return track, while the rest
+              of us pursued the &quot;wet exit&quot;. A hanging rope at the &quot;dry exit&quot;
+              served more as a confidence booster than a necessity. Another
+              route to rejoin the return track a mere five meters downstream
+              posed no challenge. As the water was getting deeper and deeper,
+              Arek dived under water to go for the black t-shirt award, Fiona
+              had to swim, and the rest of us waded with water reaching our
+              shoulders. A brief uphill trek returned us to the starting point,
+              where farm transportation awaited. Dust from the track settled on
+              our wet clothes. Back at the farmyard, we changed into dry, warm
+              attire before journeying back to Martinborough. Pizzas at Colombo
+              Vineyard, accompanied by wine and beer sampling, capped off a
+              memorable family adventure. <br>Thanks again to Susanna and Dawid for
+              a great Christmas present.
+            </p>
+          </div>          
+          <div class="map map-short">
+            <div class="map-icons">
+              <ul class="map-links">
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://www.patunafarm.co.nz/"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="book-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="map-link"
+                    href="https://photos.app.goo.gl/vBReRKhkgu8Rdqea7"
+                    target="_blank"
+                  >
+                    <ion-icon class="map-icon" name="camera-outline"></ion-icon>
+                  </a>
+                </li>
+ 
+              </ul>
+            </div>
+            <div class="map-img-box">
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=148EsEmRUR9ic3oXVmCg-L-igCf6jokQ&ehbc=2E312F"
+              ></iframe>
             </div>
           </div>
         </div>
-        <div class="map map-short">
-          <div class="map-icons">
-            <ul class="map-links">
-              <li><a class="map-link" href="https://paekakariki.nz/listings/paekakariki-escarpment-track/"
-                  target="_blank">
-                  <ion-icon class="map-icon" name="book-outline"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a class="map-link" href="https://photos.app.goo.gl/qtE3bAYfFykRze2s7" target="_blank">
-                  <ion-icon class="map-icon" name="camera-outline"></ion-icon>
-                </a>
-              </li>
-              <li><a class="map-link" href="https://www.youtube.com/watch?v=XfloZxxewQI" target="_blank">
-                  <ion-icon class="map-icon" name="videocam-outline"></ion-icon>
-                </a></li>
-              <li><a class="map-link"
-                  href="https://www.gw.govt.nz/assets/Documents/2022/08/Parangarahu-Lakes-Trail-Map.pdf"
-                  target="_blank">
-                  <ion-icon class="map-icon" name="map-outline"></ion-icon>
-                </a></li>
-
-
-            </ul>
-          </div>
-          <div class="map-img-box">
-            <iframe
-              src="https://www.google.com/maps/d/u/0/embed?mid=1uKOfhNCpF3K1UUl3brkixKDq16ohPgHF&ehbc=2E312F"></iframe>
-          </div>
-
-        </div>
-      </div> -->
+      </section>
     </section>
-  </section>
 
-  <!-- Footer -->
-  <div id="footer-placeholder">
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+      $.get("../pages/footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+      });
+    </script>
 
-  </div>
-  <script>
-    $.get("../pages/footer.html", function (data) {
-      $("#footer-placeholder").replaceWith(data);
-    });
-  </script>
-
-
-  <!-- end of the Footer -->
-
-</body>
-
+    <!-- end of the Footer -->
+  </body>
 </html>
