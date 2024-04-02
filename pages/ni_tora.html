@@ -1,316 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Experience the Tora Coastal Walk in Southern Wairarapa, with picturesque views and challenging terrain. Join fellow walkers from the Scenic Walkers group for an unforgettable adventure."
+    />
+    <meta
+      name="keywords"
+      content="Tora Coastal Walk, Southern Wairarapa, Scenic Walkers, Kawakawa Station walk, Great Hike App, Whakatapa Cottage, Stony Bay Lodge, Greentops Farmhouse, hiking, trekking, New Zealand"
+    />
+    <meta name="author" content="Karol Wojasz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../img/icons/favicon.png"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/script.js" defer></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  <!-- CSS only -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" type="image/png" href="../img/icons/favicon.png">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../scripts/script.js" defer></script>
+    <title>Tora Walk</title>
+  </head>
 
-  <title>Tora Walk</title>
-</head>
+  <body>
+    <!-- Navigation -->
+    <div id="navigation-placeholder"></div>
+    <script>
+      $.get("../pages/ni_navigation.html", function (data) {
+        $("#navigation-placeholder").replaceWith(data);
+      });
+    </script>
 
-<body>
+    <!-- end of the Navigation -->
 
-  <!-- Navigation -->
-  <div id="navigation-placeholder">
-
-  </div>
-  <script>
-    $.get("../pages/ni_navigation.html", function (data) {
-      $("#navigation-placeholder").replaceWith(data);
-    });
-  </script>
-
-
-  <!-- end of the Navigation -->
-
-  <div class="gws_topbar">
-    <div class="gws_topbar-gallery">
-      <picture>
-        <source srcset="../img/galeries/north_island/tora/tcw_main.webp" type="image/webp" />
-        <source srcset="../img/galeries/north_island/tora/tcw_main.jpg" type="image/jpg" />
-        <img src="../img/galeries/north_island/tora/tcw_main.jpg" alt="View from Tora Costal Walk Wairarapa New Zealand">
-      </picture>
-      <div class="heading-1 gws_topbar-text-lbottom">Tora Costal Walk Wairarapa New Zealand</div>
-    </div>
-  </div>
-
-  <div class="traveling gw_lw-container grid grid--2--cols">
-    <div class="col-1-of-2">
-      <h3 class="walk_day-heading">
-        Getting There
-      </h3>
-      <p class="walk_day-description">
-        Tora Costal Walk Wairarapa New Zealand is located in Southern Wairarapa. It takes only a couple of hours to get there from our place.
-        We were expected to arrive at the station in the late afternoon so we decided to stop for lunch and window
-        shopping in Martinborough. The Village Cafe and Bar was a good choice. I can not remember what we ate but I can
-        recollect strong, hot drinks. The rest of the afternoon we spent visiting multiple small stores selling a
-        variety of items, some of which I had no idea what they were for. The last visit was to a Four Square food
-        market where we stocked up on wine and beer before continuing our journey for another hour. Upon arriving at the
-        station we were welcomed by the owners and shown to our accommodation. That evening we met other members of the
-        Scenic Walkers group, heated a nice dinner prepared for us by the host and were introduced to the logistics of
-        the walk.
-    </div>
-    <div class="col-1-of-2">
-      <div class="composition_ni">
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery1.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery1.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery1.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery2.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery2.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery2.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery3.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery3.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery3.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery4.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery4.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery4.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery5.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery5.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery5.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery6.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery6.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery6.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery7.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery7.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery7.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery8.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery8.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery8.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
-        <figure class="composition_ni-item">
-          <picture>
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery9.webp" type="image/webp" />
-            <source srcset="../img/galeries/north_island/tora/tcw_gallery9.jpg" type="image/jpg" />
-            <img src="../img/galeries/north_island/tora/tcw_gallery9.jpg"
-              alt="Tora Costal Walk Wairarapa New Zealand" />
-          </picture>
-        </figure>
+    <div class="gws_topbar">
+      <div class="gws_topbar-gallery">
+        <picture>
+          <source
+            srcset="../img/galeries/north_island/tora/tora_main.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="../img/galeries/north_island/tora/tora_main.jpg"
+            type="image/jpg"
+          />
+          <img
+            src="../img/galeries/north_island/tora/tora_main.jpg"
+            alt="View from Tora Coastal Walk Wairarapa New Zealand"
+          />
+        </picture>
+        <div class="heading-1 gws_topbar-text-ltop">Tora Coastal Walk</div>
       </div>
     </div>
-  </div>
 
-  <section class="walks">
-    <section class="walk">
-      <div class="gw_lw-container grid grid--2--cols">
-        <div class="walk_day-img-box">
-          <div class="walk_day-imgs">
-            <picture>
-              <source srcset="../img/galeries/north_island/tora/tcw_day1.webp" type="image/webp" />
-              <source srcset="../img/galeries/north_island/tora/tcw_day1.jpg" type="image/jpg" />
-              <img src="../img/galeries/north_island/tora/tcw_day1.jpg" alt="Wairarapa Coast"
-                class="walk_day-img" />
-            </picture>
-          </div>
-          <div class="walk-icons">
-            <div class="walk-icon">
-              <ion-icon name="calendar-outline"></ion-icon>
-              <p>23-Oct-2020</p>
-            </div>
-            <div class="walk-icon">
-              <ion-icon name="hourglass-outline"></ion-icon>
-              <p>5:40 Hrs</p>
-            </div>
-            <div class="walk-icon">
-              <ion-icon name="footsteps-outline"></ion-icon>
-              <p>11.00 kms</p>
-            </div>
-          </div>
-        </div>
-        <div class="walk_text-box">
-          <p class="walk_day-number">Day 01</p>
-          <h3 class="walk_day-heading">
-            Farm Cottage to Jakeb&apos;s Cabins
-          </h3>
-          <span class="walk_subheading">23-Oct-2020</span>
-          <p class="walk_day-description">
-            It was a very interesting day. It started innocently with an easy walk along the beach towards Ngawi
-            settlement. This coast is well known to Wellington water enthusiasts so it was not a big surprise to see
-            Magnus there having a go on the SUP. Once we reached the Ngawi golf club we turned left towards the hills.
-            At the bottom of the hill we had a short rest to allow access to the public toilet and then started a slow
-            ascent to the top of &apos;The Ant&apos; at 616 meters above sea level. Overall the climb was not too
-            difficult but had its moment. Once we reach the summit we were awarded spectacular 360-degree views. From
-            there the track leads all the way down to Jakeb&apos;s Cabins. All our gear, food and drinks were already
-            delivered by the host. All we needed to do was to heat the semi-cooked meals and enjoy dinner in a big
-            common room.
-          </p>
-
-        </div>
-
-      </div>
-      <div class="gw_lw-container grid grid--2--cols">
-        <div class="walk_text-box">
-          <p class="walk_day-number">Day 02</p>
-          <h3 class="walk_day-heading">
-            Jakeb&apos;s Cabins to Purple Hut
-          </h3>
-          <span class="walk_subheading">24-Oct-2020</span>
-          <p class="walk_day-description">
-            Soon after packing the gear, having breakfast and making lunches we were ready for another day of
-            adventures. But first, we had to retrace our steps back to the signage pointing to Purple Hut. A short
-            uphill helped us to warm up the legs. Once we passed the signage we were in new territory. Double Saddle is
-            a native bush track with fine examples of mature native bush. A very enjoyable part of the day. At the end
-            of the Double Saddle, we reached a clearing with great views over the station. Just before the Purple Hut,
-            we came across a spooky-looking place that probably was a trapper&apos;s hut. Old cages, animal bones and
-            skulls, odd pieces of furniture that looked like scenery from the Deliverance movie. Luckily the Purple Hut
-            was spacious, very tidy and very comfortable. Again our gear and the food were waiting for us. Big steaks
-            waiting to be barbecued, salads, desserts, cold wine and beer were the perfect items to call it a day.
-          </p>
-
-        </div>
-        <div class="walk_day-img-box">
-          <div class="walk_day-imgs">
-            <picture>
-              <source srcset="../img/galeries/north_island/tora/tcw_day2.webp" type="image/webp" />
-              <source srcset="../img/galeries/north_island/tora/tcw_day2.jpg" type="image/jpg" />
-              <img src="../img/galeries/north_island/tora/tcw_day2.jpg" alt="Tora Costal Walk Wairarapa New Zealand"
-                class="walk_day-img" />
-            </picture>
-          </div>
-          <div class="walk-icons">
-            <div class="walk-icon">
-              <ion-icon name="calendar-outline"></ion-icon>
-              <p>24-Oct-2020</p>
-            </div>
-            <div class="walk-icon">
-              <ion-icon name="hourglass-outline"></ion-icon>
-              <p>5:50 Hrs</p>
-            </div>
-            <div class="walk-icon">
-              <ion-icon name="footsteps-outline"></ion-icon>
-              <p>8.40 kms</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gw_lw-container grid grid--2--cols">
-        <div class="walk_day-img-box">
-          <div class="walk_day-imgs">
-            <picture>
-              <source srcset="../img/galeries/north_island/tora/tcw_day3.webp" type="image/webp" />
-              <source srcset="../img/galeries/north_island/tora/tcw_day3.jpg" type="image/jpg" />
-              <img src="../img/galeries/north_island/tora/tcw_day3.jpg" alt="Tora Costal Walk Wairarapa New Zealand"
-                class="walk_day-img" />
-            </picture>
-          </div>
-          <div class="walk-icons">
-            <div class="walk-icon">
-              <ion-icon name="calendar-outline"></ion-icon>
-              <p>25-Oct-2020</p>
-            </div>
-            <div class="walk-icon">
-              <ion-icon name="hourglass-outline"></ion-icon>
-              <p>2:40 Hrs</p>
-            </div>
-            <div class="walk-icon">
-              <ion-icon name="footsteps-outline"></ion-icon>
-              <p>7.10 kms</p>
-            </div>
-          </div>
-        </div>
-        <div class="walk_text-box">
-          <p class="walk_day-number">Day 03</p>
-          <h3 class="walk_day-heading">
-            Purple Hut to Farm Cottage
-          </h3>
-          <span class="walk_subheading">25-Oct-2020</span>
-          <p class="walk_day-description">
-            We took our time to get ready for the last walk of this trip. As stated in the guide it was a very relaxing
-            stroll back to the farmhouse. The track went first through some native bush before, turning into multiple
-            crossings of the shallow clear-water stream. Nothing extreme, just a little bit different from the rest of
-            the walk. Around midday, we reached the end point of our journey, station Homestead. We packed the car, said
-            goodbye to our hosts and co-walkers and drove back home
-          </p>
-
-        </div>
-
+    <div class="traveling gw_lw-container grid grid--2--cols">
+      <div class="col-1-of-git ">
+        <h3 class="walk_day-heading">Getting There</h3>
+        <p class="walk_day-description">
+          The Tora Coastal Walk resides in Southern Wairarapa, just a few hours'
+          journey from our home to Whakatapa Cottage, which serves as the
+          starting point for the adventure. Arriving at the cottage around 4
+          o'clock, we were greeted by fellow walkers from the Scenic Walkers
+          group and a couple from Auckland. Following a briefing from one of the
+          hosts, we settled into the cottage, enjoying drinks and a hearty
+          dinner provided by the tour organizers, getting ready for the next day
+          walk. <br />Unlike the Kawakawa Station walk, all three accommodation
+          sites along this route boasted electricity and WiFi access.
+          <br />Utilizing the
+          <a href="https://www.greathikesapp.com/" target="_blank"
+            >Great Hike App
+          </a>
+          for offline access to walk details, coupled with a printed map, proved
+          invaluable once we hit the trail. The route is also well marked by
+          coloured arrows.
+        </p>
       </div>
 
+      <div class="col-1-of-2">
+        <div class="composition_ni">
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery1.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery1.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery1.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery2.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery2.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery2.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery3.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery3.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery3.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery4.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery4.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery4.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery5.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery5.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery5.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery6.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery6.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery6.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery7.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery7.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery7.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery8.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery8.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery8.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+          <figure class="composition_ni-item">
+            <picture>
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery9.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="../img/galeries/north_island/tora/tcw_gallery9.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="../img/galeries/north_island/tora/tcw_gallery9.jpg"
+                alt="Tora Coastal Walk Wairarapa New Zealand"
+              />
+            </picture>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <section class="walks">
+      <section class="walk">
+        <div class="gw_lw-container grid grid--2--cols">
+          <div class="walk_day-img-box">
+            <div class="walk_day-imgs">
+              <picture>
+                <source
+                  srcset="../img/galeries/north_island/tora/tcw_day1.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="../img/galeries/north_island/tora/tcw_day1.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  src="../img/galeries/north_island/tora/tcw_day1.jpg"
+                  alt="Wairarapa Coast"
+                  class="walk_day-img"
+                />
+              </picture>
+            </div>
+            <div class="walk-icons">
+              <div class="walk-icon">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <p>30-Mar-2024</p>
+              </div>
+              <div class="walk-icon">
+                <ion-icon name="hourglass-outline"></ion-icon>
+                <p>5:55 Hrs</p>
+              </div>
+              <div class="walk-icon">
+                <ion-icon name="footsteps-outline"></ion-icon>
+                <p>15.50 kms</p>
+              </div>
+            </div>
+          </div>
+          <div class="walk_text-box">
+            <p class="walk_day-number">Day 01</p>
+            <h3 class="walk_day-heading">
+              Whakapata Cottage to Stony Bay Lodge
+            </h3>
+            <span class="walk_subheading">30-Mar-2024</span>
+            <p class="walk_day-description">
+              Leaving the cottage promptly at 8:30 AM, we traversed the paddock
+              and embarked on a 10-minute journey along the road before veering
+              left onto Brown Hill. A gradual ascent led us to Stag Point,
+              followed by a very muddy descent to No Name Creek at the
+              gully&apos;s base. Walking poles were very helpful in the slippery
+              conditions. Negotiating a series of undulations, we reached the
+              foot of The Buglar, where a brief but steep 5-minute climb brought
+              us to an elevation of 255 meters above sea level, rewarding us
+              with breathtaking 360-degree views of the surrounding farmland.
+              <br />After a quick lunch break at Shed 25, we resumed our trek,
+              steadily ascending towards Rocky Knob, towering at 318 meters.
+              Passing Witches Hat (239 meters) we embarked on the long,
+              occasionally steep descent, notably the challenging Rope Run,
+              towards the coastal road. Following an uneventful stroll along the
+              road, keeping eyes open for seals, we finally arrived at the
+              splendid Stony Bay Lodge.
+            </p>
+          </div>
+        </div>
+        <div class="gw_lw-container grid grid--2--cols">
+          <div class="walk_text-box">
+            <p class="walk_day-number">Day 02</p>
+            <h3 class="walk_day-heading">
+              Stony Bay Lodge to Greentops Farmhouse
+            </h3>
+            <span class="walk_subheading">31-Mar-2024</span>
+            <p class="walk_day-description">
+              It was a brief day in terms of walking. In the early morning, a
+              small group of us ascended to the Crow&apos;s Nest, a 15-minute
+              journey that rewarded us with breathtaking views of the south
+              coast. Bidding farewell to our cozy lodge, we set off for
+              Greentops Farmhouse, with a quick stop at Manurewa Point for some
+              photo opportunities. Along the coastal road, we passed Stony
+              Beach, Sandy Beach, and Te Awaiti Reserve. Although we missed the
+              chance to visit The Opua Shipwreck due to unfavorable tides
+              earlier in the day, we were eager to climb The Rig, a 301-meter
+              peak near our cottage. However, our plans were thwarted by high
+              winds and impending rain. Instead, we retreated to the comfort of
+              our spacious cottage, enjoying drinks and relaxation, end another
+              fabulous meal before another eventful day ahead.
+            </p>
+          </div>
+          <div class="walk_day-img-box">
+            <div class="walk_day-imgs">
+              <picture>
+                <source
+                  srcset="../img/galeries/north_island/tora/tcw_day2.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="../img/galeries/north_island/tora/tcw_day2.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  src="../img/galeries/north_island/tora/tcw_day2.jpg"
+                  alt="Tora Coastal Walk Wairarapa New Zealand"
+                  class="walk_day-img"
+                />
+              </picture>
+            </div>
+            <div class="walk-icons">
+              <div class="walk-icon">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <p>31-Mar-2024</p>
+              </div>
+              <div class="walk-icon">
+                <ion-icon name="hourglass-outline"></ion-icon>
+                <p>4:30 Hrs</p>
+              </div>
+              <div class="walk-icon">
+                <ion-icon name="footsteps-outline"></ion-icon>
+                <p>7.43 kms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gw_lw-container grid grid--2--cols">
+          <div class="walk_day-img-box">
+            <div class="walk_day-imgs">
+              <picture>
+                <source
+                  srcset="../img/galeries/north_island/tora/tcw_day3.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="../img/galeries/north_island/tora/tcw_day3.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  src="../img/galeries/north_island/tora/tcw_day3.jpg"
+                  alt="Tora Coastal Walk Wairarapa New Zealand"
+                  class="walk_day-img"
+                />
+              </picture>
+            </div>
+            <div class="walk-icons">
+              <div class="walk-icon">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <p>01-Apr-2024</p>
+              </div>
+              <div class="walk-icon">
+                <ion-icon name="hourglass-outline"></ion-icon>
+                <p>4:27 Hrs</p>
+              </div>
+              <div class="walk-icon">
+                <ion-icon name="footsteps-outline"></ion-icon>
+                <p>15.10 kms</p>
+              </div>
+            </div>
+          </div>
+          <div class="walk_text-box">
+            <p class="walk_day-number">Day 03</p>
+            <h3 class="walk_day-heading">
+              Stony Bay Lodge to Greentops Farmhouse
+            </h3>
+            <span class="walk_subheading">01-Apr-2024</span>
+            <p class="walk_day-description">
+              This day will go down in memory as Mud Day.<br />
+              We embarked on our journey bright and early, tracing the banks of
+              the Oterei River until we encountered a slippery and muddy descent
+              towards The Crossing. Sticking to the farm track, we navigated
+              past the Bush Gate and onto the Old Stock Route. Ascending through
+              the dense, wet native bush, we eventually reached Whitehead Point.
+              However, the previous night&apos;s heavy rainfall had transformed
+              the steep downhill path to Poachers Creek into a treacherous,
+              muddy obstacle course. After numerous precarious ascents and
+              descents, we finally conquered the infamous Squealers Track,
+              renowned for its steep incline. A brief respite on the relatively
+              level terrain ended abruptly at The Last Over, where we mistakenly
+              believed the day&apos;s uphill challenges had concluded. Our
+              spirits were slightly dampened, as we pressed on, only to
+              encounter yet another hill after crossing the Sky&apos;s
+              Footbridge. Following a 30-minute trek along the main road, we
+              arrived at the cottage, grateful for the opportunity to shower,
+              change into fresh attire, and enjoy a hot beverage before bidding
+              farewell to our fellow walkers and embarking on our journey home.
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
-  </section>
-  <section class="map">
-    <div class="map-icons">
-      <ul class="map-links">
-        <li><a class="map-link" href="https://kawakawastation.co.nz/" target="_blank">
-            <ion-icon class="map-icon" name="book-outline"></ion-icon>
-          </a>
-        </li>
-        <li>
-          <a class="map-link" href="https://photos.app.goo.gl/UHjcyRWCmPkB2tkR7" target="_blank">
-            <ion-icon class="map-icon" name="camera-outline"></ion-icon>
-          </a>
-        </li>
-        <li><a class="map-link" href="https://www.youtube.com/watch?v=WpdxmAtt3Ds" target="_blank">
-            <ion-icon class="map-icon" name="videocam-outline"></ion-icon>
-          </a></li>
-      </ul>
-    </div>
-    <div class="map-img-box">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xufVs500qTdhpntXbjnnBFWm0jzNrs4&ehbc=2E312F"></iframe>
-    </div>
+    <section class="map">
+      <div class="map-icons">
+        <ul class="map-links">
+          <li>
+            <a
+              class="map-link"
+              href="https://toracoastalwalk.nz/"
+              target="_blank"
+            >
+              <ion-icon class="map-icon" name="book-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="map-link"
+              href="https://photos.app.goo.gl/b39A8r86fb53R9ch9"
+              target="_blank"
+            >
+              <ion-icon class="map-icon" name="camera-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="map-link"
+              href="https://www.youtube.com/watch?v=ixtBPhuabvI&t=2s"
+              target="_blank"
+            >
+              <ion-icon class="map-icon" name="videocam-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="map-img-box">
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=1LP_r85mcHKyJapf9n5S6JM1HdTXdAuk&ehbc=2E312F"
+        ></iframe>
+      </div>
+    </section>
 
-  </section>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+      $.get("../pages/footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+      });
+    </script>
 
-  <!-- Footer -->
-  <div id="footer-placeholder">
-
-  </div>
-  <script>
-    $.get("../pages/footer.html", function (data) {
-      $("#footer-placeholder").replaceWith(data);
-    });
-  </script>
-
-
-  <!-- end of the Footer -->
-
-</body>
-
+    <!-- end of the Footer -->
+  </body>
 </html>
