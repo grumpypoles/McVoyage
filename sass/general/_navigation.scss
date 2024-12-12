@@ -238,6 +238,9 @@
 
   &_list {
     @include centerfix;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
     list-style: none;
     text-align: center;
     width: 100%;
@@ -251,7 +254,7 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 300;
       padding: 1rem 2rem;
       color: $color-white;
